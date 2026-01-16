@@ -1,0 +1,216 @@
+
+> my-v0-project@0.1.0 dev
+> next dev
+
+   ▲ Next.js 16.0.10 (Turbopack)
+   - Local:         http://localhost:3000
+   - Network:       http://192.168.100.200:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.6s
+ ○ Compiling / ...
+ ⨯ ./app/globals.css:6427:8
+Parsing CSS source code failed
+[0m [90m 6425 |[39m   initial[33m-[39mvalue[33m:[39m [35m0[39m[33m;[39m
+ [90m 6426 |[39m }
+[31m[1m>[22m[39m[90m 6427 |[39m [33m@[39m[36mimport[39m url([32m"https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"[39m)[33m;[39m
+ [90m      |[39m        [31m[1m^[22m[39m
+ [90m 6428 |[39m [33m:[39mroot {
+ [90m 6429 |[39m   [33m--[39mobsidian[33m:[39m [33m#[39m[35m07060[39ma[33m;[39m
+ [90m 6430 |[39m   [33m--[39mgraphite[33m:[39m [33m#[39m[35m0[39mf0d14[33m;[39m[0m
+
+@import rules must precede all rules aside from @charset and @layer statements
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+./components/oraculos-section.tsx:22:87
+Parsing ecmascript source code failed
+[0m [90m 20 |[39m         {[90m/* Intro */[39m}
+ [90m 21 |[39m         [33m<[39m[33mAnimatedSection[39m className[33m=[39m[32m"text-center mb-16"[39m[33m>[39m
+[31m[1m>[22m[39m[90m 22 |[39m           [35m2[39m className[33m=[39m[32m"font-display text-3xl md:text-4xl tracking-wide mb-2 text-bone"[39m[33m>[39m{oraculos[33m.[39mtitle}[33m<[39m[33m/[39m[33mh2[39m[33m>[39m
+ [90m    |[39m                                                                                       [31m[1m^[22m[39m
+ [90m 23 |[39m           [33m<[39m[33mp[39m className[33m=[39m[32m"font-display text-xl text-gold/80 mb-6"[39m[33m>[39m{oraculos[33m.[39msubtitle}[33m<[39m[33m/[39m[33mp[39m[33m>[39m
+ [90m 24 |[39m           [33m<[39m[33mEgyptianDivider[39m className[33m=[39m[32m"mb-8"[39m [33m/[39m[33m>[39m
+ [90m 25 |[39m[0m
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import trace:
+  Server Component:
+    ./components/oraculos-section.tsx
+    ./app/page.tsx
+
+
+ HEAD / 500 in 15.6s (compile: 15.2s, render: 390ms)
+ ✓ Compiled in 758ms
+ HEAD / 200 in 2.1s (compile: 884ms, render: 1216ms)
+ GET / 200 in 539ms (compile: 10ms, render: 529ms)
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 200 in 1035ms (compile: 11ms, render: 1024ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 2.7s (compile: 2.5s, render: 149ms)
+ GET /ancient-stone-portal-door-slightly-open-with-soft-.jpg 404 in 1922ms (compile: 1729ms, render: 193ms)
+ ✓ Compiled in 2.5s
+ ✓ Compiled in 1296ms
+ ✓ Compiled in 1287ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1941ms
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/ancient-stone-portal-door-slightly-open-with-soft-.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3906976972'
+}
+ ○ Compiling / ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/ancient-stone-portal-door-slightly-open-with-soft-.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3906976972'
+}
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 500 in 10.3s (compile: 7.9s, render: 2.3s)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 1699ms (compile: 801ms, render: 898ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 211ms (compile: 12ms, render: 199ms)
+ ✓ Compiled in 2.7s
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/ancient-stone-portal-door-slightly-open-with-soft-.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3906976972'
+}
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 500 in 3.0s (compile: 15ms, render: 3.0s)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 543ms (compile: 231ms, render: 312ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 106ms (compile: 12ms, render: 94ms)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 910ms
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/ancient-stone-portal-door-slightly-open-with-soft-.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '708887243'
+}
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 500 in 1411ms (compile: 330ms, render: 1081ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 276ms (compile: 140ms, render: 136ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 187ms (compile: 31ms, render: 156ms)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 641ms
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/ancient-stone-portal-door-slightly-open-with-soft-.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3676331205'
+}
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 500 in 1663ms (compile: 352ms, render: 1312ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 278ms (compile: 44ms, render: 234ms)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 90ms (compile: 16ms, render: 74ms)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 625ms
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/images/circulo.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3676331205'
+}
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 552ms (compile: 206ms, render: 346ms)
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 500 in 3.4s (compile: 985ms, render: 2.5s)
+ GET /dark-ancient-egyptian-temple-interior-with-nordic-.jpg 404 in 229ms (compile: 24ms, render: 205ms)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 408ms
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/images/circulo.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3676331205'
+}
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 500 in 2.5s (compile: 729ms, render: 1775ms)
+ ⨯ ReferenceError: ImageBackground is not defined
+    at ContactSection (components/contact-section.tsx:38:8)
+  36 |   return (
+  37 |     <section id="contato" className="py-24 md:py-32 relative overflow-hidden">
+> 38 |       <ImageBackground
+     |        ^
+  39 |         src="/images/circulo.jpg"
+  40 |         alt="background"
+  41 |         wrapperClassName="absolute inset-0" {
+  digest: '3676331205'
+}
+ GET / 500 in 749ms (compile: 11ms, render: 738ms)
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1024ms
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 200 in 3.4s (compile: 1389ms, render: 1985ms)
+ GET / 200 in 1284ms (compile: 8ms, render: 1276ms)
+ ✓ Compiled in 3.7s
+ ✓ Compiled in 852ms
+ ✓ Compiled in 3s
+ ✓ Compiled in 1616ms
+ ✓ Compiled in 923ms
+ ✓ Compiled in 429ms
+ GET / 200 in 1735ms (compile: 394ms, render: 1341ms)
+ ✓ Compiled in 995ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 616ms
+ GET /?id=33312a31-3a4d-4a07-b923-361222d1b9ff&vscodeBrowserReqId=1768570996019 200 in 2.3s (compile: 570ms, render: 1722ms)
+ GET / 200 in 548ms (compile: 5ms, render: 543ms)
+ GET / 200 in 403ms (compile: 14ms, render: 389ms)
+ GET / 200 in 4.0s (compile: 1042ms, render: 3.0s)
+ GET / 200 in 4.0s (compile: 13ms, render: 4.0s)
+ GET / 200 in 1011ms (compile: 17ms, render: 994ms)
+ GET / 200 in 1929ms (compile: 10ms, render: 1919ms)
+ GET / 200 in 1636ms (compile: 15ms, render: 1621ms)
+ GET / 200 in 1228ms (compile: 23ms, render: 1205ms)
+ GET / 200 in 1060ms (compile: 10ms, render: 1050ms)
+ ✓ Compiled in 1058ms
+ ✓ Compiled in 2.2s
+ GET / 200 in 3.5s (compile: 769ms, render: 2.8s)
+ ✓ Compiled in 1576ms
+ ✓ Compiled in 1614ms
+ GET / 200 in 6.8s (compile: 1015ms, render: 5.7s)
+ ✓ Compiled in 429ms
+ ✓ Compiled in 250ms
+ ✓ Compiled in 266ms
+ ✓ Compiled in 770ms
+ GET / 200 in 1316ms (compile: 284ms, render: 1032ms)
+ ✓ Compiled in 412ms
+ GET / 200 in 2.6s (compile: 680ms, render: 1894ms)
+ ✓ Compiled in 3.6s
+ GET / 200 in 4.7s (compile: 1278ms, render: 3.4s)

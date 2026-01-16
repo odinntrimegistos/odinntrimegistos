@@ -1,0 +1,425 @@
+/* Fonts are loaded via next/font in layout.tsx: Cinzel Decorative (display) and Montserrat (body) */
+@import "tailwindcss";
+@import "tw-animate-css";
+/* Updated font import to Cormorant Garamond which supports Portuguese characters */
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Temple palette */
+  --obsidian: #07060a;
+  --graphite: #0f0d14;
+  --slate: #1c1826;
+  --sand: #d7c9a7;
+  --bone: #efe9dc;
+  --gold: #b89b4a;
+  --gold-muted: #8a7339;
+  --gold-bright: #d4b85a;
+  --deepred: #3a0b16;
+  --oxide: #6e5b3a;
+
+  /* Semantic tokens mapped to temple palette */
+  --background: var(--obsidian);
+  --foreground: var(--bone);
+  --card: var(--graphite);
+  --card-foreground: var(--bone);
+  --popover: var(--graphite);
+  --popover-foreground: var(--bone);
+  --primary: var(--gold);
+  --primary-foreground: var(--obsidian);
+  --secondary: var(--slate);
+  --secondary-foreground: var(--sand);
+  --muted: var(--slate);
+  --muted-foreground: var(--sand);
+  --accent: var(--deepred);
+  --accent-foreground: var(--bone);
+  --destructive: var(--deepred);
+  --destructive-foreground: var(--bone);
+  --border: rgba(184, 155, 74, 0.16);
+  --input: var(--slate);
+  --ring: var(--gold);
+  --radius: 1rem;
+
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-sans: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Color Emoji";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  /* Display font for titles */
+  --font-display: "Cinzel Decorative", serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Custom colors */
+  --color-obsidian: var(--obsidian);
+  --color-graphite: var(--graphite);
+  --color-slate: var(--slate);
+  --color-sand: var(--sand);
+  --color-bone: var(--bone);
+  --color-gold: var(--gold);
+  --color-gold-muted: var(--gold-muted);
+  --color-gold-bright: var(--gold-bright);
+  --color-deepred: var(--deepred);
+  --color-oxide: var(--oxide);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Temple shadows */
+  --shadow-temple: 0 18px 60px rgba(0, 0, 0, 0.55);
+  --shadow-insetline: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
+
+/* Grain overlay for texture */
+.grain::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 0.15;
+  z-index: 9999;
+}
+
+/* Added animated grain for subtle texture movement */
+.grain-animated::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 0.08;
+  animation: grain-shift 8s steps(10) infinite;
+}
+
+/* Etched border style */
+.etched {
+  border: 1px solid rgba(184, 155, 74, 0.16);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* Ritual button style */
+.btn-ritual {
+  border: 1px solid rgba(184, 155, 74, 0.28);
+  background: linear-gradient(180deg, rgba(184, 155, 74, 0.14), rgba(184, 155, 74, 0.06));
+}
+.btn-ritual:hover {
+  border-color: rgba(184, 155, 74, 0.46);
+  background: linear-gradient(180deg, rgba(184, 155, 74, 0.18), rgba(184, 155, 74, 0.08));
+}
+
+/* Temple radial background */
+.temple-radial {
+  background: radial-gradient(1000px circle at 20% 10%, rgba(184, 155, 74, 0.12), transparent 60%),
+    radial-gradient(900px circle at 80% 30%, rgba(58, 11, 22, 0.1), transparent 55%);
+}
+
+/* Image unification utilities: subtle sepia overlay + vignette */
+.image-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.image-unify {
+  filter: sepia(0.12) saturate(0.95) contrast(1.02) brightness(0.98);
+  transition: filter 250ms ease;
+}
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(184,155,74,0.05), rgba(184,155,74,0.06));
+  mix-blend-mode: overlay;
+  opacity: 0.95;
+}
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 55%, rgba(0,0,0,0.5) 100%);
+}
+
+/* Temple grid pattern */
+.temple-grid {
+  background-image: linear-gradient(rgba(184, 155, 74, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(184, 155, 74, 0.06) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Section-specific backgrounds */
+.bg-pillar-body {
+  background: linear-gradient(180deg, var(--graphite) 0%, rgba(28, 24, 38, 0.8) 100%);
+}
+
+.bg-pillar-mind {
+  background: linear-gradient(180deg, var(--obsidian) 0%, rgba(15, 13, 20, 0.9) 100%);
+}
+
+.bg-pillar-soul {
+  background: linear-gradient(180deg, rgba(58, 11, 22, 0.15) 0%, var(--obsidian) 100%);
+}
+
+/* Custom scrollbar with gold */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--obsidian);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Animations */
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
+@keyframes drift {
+  0% {
+    transform: translate3d(-2%, 0, 0);
+  }
+  50% {
+    transform: translate3d(2%, -1%, 0);
+  }
+  100% {
+    transform: translate3d(-2%, 0, 0);
+  }
+}
+@keyframes rise {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* New animations for visual architecture */
+@keyframes grain-shift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-1%, -1%);
+  }
+  20% {
+    transform: translate(1%, 1%);
+  }
+  30% {
+    transform: translate(-1%, 1%);
+  }
+  40% {
+    transform: translate(1%, -1%);
+  }
+  50% {
+    transform: translate(-1%, 0);
+  }
+  60% {
+    transform: translate(1%, 0);
+  }
+  70% {
+    transform: translate(0, 1%);
+  }
+  80% {
+    transform: translate(0, -1%);
+  }
+  90% {
+    transform: translate(1%, 1%);
+  }
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+@keyframes pulse-gold {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(184, 155, 74, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(184, 155, 74, 0.25);
+  }
+}
+
+@keyframes smoke {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-20px) scale(1.1);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-40px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes draw-line {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes parallax-shift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+.animate-glow {
+  animation: glow 5s ease-in-out infinite;
+}
+.animate-drift {
+  animation: drift 12s ease-in-out infinite;
+}
+.animate-rise {
+  animation: rise .7s ease-out both;
+}
+.animate-flicker {
+  animation: flicker 3s ease-in-out infinite;
+}
+.animate-pulse-gold {
+  animation: pulse-gold 4s ease-in-out infinite;
+}
+.animate-smoke {
+  animation: smoke 8s ease-in-out infinite;
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+.animate-draw-line {
+  stroke-dasharray: 1000;
+  animation: draw-line 2s ease-out forwards;
+}
