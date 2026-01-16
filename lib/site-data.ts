@@ -497,6 +497,212 @@ export const siteConfig = {
     },
   },
 
+  // METODOLOGIA (Página /metodologia)
+  metodologia: {
+    metadata: {
+      title: "Metodologia Trimegista | Odinn Trimegistos",
+      description:
+        "A ciência simbólica aplicada à vida real. Conheça a Metodologia Trimegista: Tarot, Astrologia, Runas, Rituais e Alquimia para transformação consciente.",
+    },
+    hero: {
+      badge: "Ciência Simbólica",
+      title: "METODOLOGIA TRIMEGISTA",
+      subtitle: "A ciência simbólica aplicada à vida real",
+    },
+    principioFundamental: {
+      intro: [
+        [{ text: "Meu trabalho nasce do encontro entre tradição, experiência prática e observação profunda do ser humano." }],
+        [
+          { text: "Não sigo dogmas, não repito fórmulas prontas e não uso espiritualidade como fuga da realidade. Tudo o que aplico nos atendimentos tem " },
+          { text: "função, coerência simbólica e impacto prático", className: "text-gold" },
+          { text: "." },
+        ],
+        [
+          { text: "Chamo esse caminho de " },
+          { text: "Metodologia Trimegista", className: "text-bone font-medium" },
+          { text: " porque ele se baseia na integração entre " },
+          { text: "consciência, propósito e ação", className: "text-gold" },
+          { text: "." },
+        ],
+      ],
+      label: "PRINCÍPIO FUNDAMENTAL",
+      statement: [
+        { text: "A verdadeira transformação acontece quando " },
+        { text: "corpo, mente e alma", className: "text-gold" },
+        { text: " caminham juntos." },
+      ],
+      cards: [
+        {
+          parts: [
+            { text: "Qualquer trabalho espiritual que ignore o " },
+            { text: "corpo", className: "text-bone" },
+            { text: " vira " },
+            { text: "fantasia", className: "text-gold/80" },
+            { text: "." },
+          ],
+        },
+        {
+          parts: [
+            { text: "Qualquer trabalho que ignore a " },
+            { text: "mente", className: "text-bone" },
+            { text: " vira " },
+            { text: "confusão", className: "text-gold/80" },
+            { text: "." },
+          ],
+        },
+        {
+          parts: [
+            { text: "Qualquer trabalho que ignore a " },
+            { text: "alma", className: "text-bone" },
+            { text: " vira " },
+            { text: "vazio", className: "text-gold/80" },
+            { text: "." },
+          ],
+        },
+      ],
+      closing:
+        "Minha metodologia organiza essas três dimensões de forma progressiva, respeitando o tempo, a história e os limites de cada pessoa.",
+    },
+    comoFunciona: {
+      title: "COMO FUNCIONA NA PRÁTICA",
+      description:
+        "Cada atendimento — seja pontual ou em mentoria — é conduzido a partir de três movimentos essenciais:",
+      movimentos: [
+        { iconKey: "eye", num: "1", title: "Leitura", description: "Compreensão clara do momento" },
+        { iconKey: "brain", num: "2", title: "Consciência", description: "Entendimento dos padrões e ciclos" },
+        { iconKey: "sparkles", num: "3", title: "Integração", description: "Aplicação real na vida cotidiana" },
+      ],
+      closing: [
+        { text: "Nada é feito para impressionar.", className: "text-sand/60 italic" },
+        { text: "Tudo é feito para funcionar.", className: "text-gold font-medium" },
+      ],
+    },
+    praticas: {
+      title: "PRÁTICAS UTILIZADAS NOS ATENDIMENTOS",
+      description: "Todas as práticas, saberes e ferramentas que emprego, sempre de forma integrada e ética.",
+      items: [
+        {
+          iconKey: "layers",
+          title: "TAROT",
+          subtitle: "Oráculo de Consciência",
+          description: "Utilizo o Tarot como linguagem simbólica profunda, não como instrumento de previsão fatalista.",
+          aplicacoes: [
+            "Leitura de padrões emocionais e mentais",
+            "Compreensão de conflitos internos",
+            "Clareza sobre escolhas e possibilidades",
+            "Orientação em momentos de decisão",
+          ],
+          nota: "As cartas funcionam como espelho. Elas revelam o que já está ativo na psique e na vida.",
+        },
+        {
+          iconKey: "moon",
+          title: "ASTROLOGIA",
+          subtitle: "Leitura do Tempo e dos Ciclos",
+          description: "A Astrologia é utilizada como ferramenta de contextualização do momento de vida.",
+          aplicacoes: ["Mapa natal", "Trânsitos atuais", "Ciclos de amadurecimento e encerramento"],
+          objetivos: ["Em que fase está", "O que pede movimento", "O que pede paciência", "O que pede encerramento"],
+          nota: "A astrologia devolve tempo e maturidade às decisões.",
+        },
+        {
+          iconKey: "compass",
+          title: "RUNAS",
+          subtitle: "Direção e Verdade",
+          description: "As runas são utilizadas como oráculo direto e objetivo.",
+          aplicacoes: ["Escolhas", "Consequências", "Forças ativas no momento", "Desafios que não podem mais ser evitados"],
+          nota: "As runas não suavizam. Elas mostram o que precisa ser encarado com honestidade.",
+        },
+        {
+          iconKey: "flame",
+          title: "RITUAIS SIMBÓLICOS",
+          subtitle: "Passagem e Integração",
+          description: "Os rituais que conduzo não pertencem a religiões institucionais. São rituais simbólicos conscientes.",
+          aplicacoes: ["Marcar encerramentos", "Sustentar decisões", "Abrir novos ciclos", "Integrar mudanças internas"],
+          nota: "O ritual não pede algo ao invisível. Ele organiza a intenção e ancora a escolha no corpo e na consciência.",
+        },
+        {
+          iconKey: "flask",
+          title: "ALQUIMIA",
+          subtitle: "Transformação Interior",
+          description: "A alquimia é a base filosófica do meu método.",
+          aplicacoes: ["Compreender processos internos", "Dissolver padrões antigos", "Integrar aprendizados", "Transformar consciência em postura"],
+          nota: "O ciclo alquímico (Nigredo, Albedo, Citrinitas e Rubedo) orienta tanto atendimentos pontuais quanto o processo completo do Opus Magnum.",
+        },
+        {
+          iconKey: "wind",
+          title: "CORPO, RESPIRAÇÃO E PRESENÇA",
+          subtitle: "Vaso Alquímico",
+          description: "Sem corpo presente, não existe transformação real.",
+          aplicacoes: ["Respiração (pranayama funcional)", "Presença corporal", "Percepção de tensões e ritmo vital"],
+          nota: "O corpo é tratado como vaso alquímico do processo espiritual.",
+        },
+        {
+          iconKey: "brain",
+          title: "LEITURA DE PADRÕES PSÍQUICOS",
+          subtitle: "Consciência Aplicada",
+          description: "Ao longo dos atendimentos, trabalho a identificação de padrões inconscientes.",
+          aplicacoes: ["Padrões emocionais recorrentes", "Mecanismos de defesa", "Repetições inconscientes", "Conflitos entre desejo, medo e ação"],
+          nota: "Isso não é terapia clínica, mas consciência aplicada.",
+        },
+      ],
+    },
+    pilares: {
+      title: "OS PILARES DA METODOLOGIA",
+      description: "Nos processos recorrentes, o trabalho se organiza em três pilares:",
+      items: [
+        { sigilKey: "body", title: "Corpo", description: "Presença, energia, sustentação e ritmo.", color: "from-slate/30 to-graphite/50" },
+        { sigilKey: "mind", title: "Mente", description: "Clareza, leitura simbólica, ciclos e escolhas conscientes.", color: "from-graphite/50 to-slate/30" },
+        { sigilKey: "soul", title: "Alma", description: "Propósito, sentido e coerência entre quem se é e como se vive.", color: "from-deepred/10 to-graphite/50" },
+      ],
+      closing: [
+        { text: "Esses pilares não são trabalhados separadamente, mas ", className: "text-sand/60 italic" },
+        { text: "integrados ao longo do tempo", className: "text-gold/80" },
+        { text: ".", className: "text-sand/60 italic" },
+      ],
+    },
+    formacao: {
+      title: "FORMAÇÃO E BASE DE CONHECIMENTO",
+      intro: "Minha formação é construída a partir de estudo contínuo e prática real, incluindo:",
+      items: [
+        "Hermetismo clássico e filosofia trimegista",
+        "Tarot simbólico e arquetípico",
+        "Astrologia tradicional e aplicada",
+        "Alquimia espiritual",
+        "Cabala hermética",
+        "Runas do Elder Futhark",
+        "Práticas de respiração e presença",
+        "Estudo comparado de tradições simbólicas",
+        "Experiência direta em atendimentos e mentorias",
+      ],
+      closing: ["Não reproduzo dogmas.", "Trabalho com o que foi vivido, testado e integrado."],
+    },
+    etica: {
+      title: "ÉTICA E RESPONSABILIDADE",
+      principles: [
+        { iconKey: "shield", text: "Todo atendimento é confidencial" },
+        { iconKey: "heart", text: "O trabalho não substitui acompanhamento médico ou psicológico" },
+        { iconKey: "scale", text: "Não incentivo dependência espiritual" },
+        { iconKey: "compass", text: "O símbolo orienta, mas a escolha é sempre do consulente" },
+      ],
+      closing: "Espiritualidade sem responsabilidade não serve ao crescimento.",
+    },
+    essencia: {
+      badge: "EM ESSÊNCIA",
+      titleLines: [
+        "A Metodologia Trimegista não promete iluminação instantânea.",
+        "Ela oferece clareza contínua, maturidade e coerência.",
+      ],
+      titleHighlightLineIndex: 1,
+      intro: "É um caminho para quem quer:",
+      chips: ["Compreender a própria vida", "Assumir escolhas com consciência", "Viver com mais verdade"],
+      closing: [
+        { text: "Sem fantasia." },
+        { text: "Sem fuga." },
+        { text: "Com presença.", className: "text-gold" },
+      ],
+      cta: { href: "/#servicos", label: "Ver Serviços e Mentorias" },
+    },
+  },
+
   // ÉTICA
   etica: {
     title: "ÉTICA E RESPONSABILIDADE",

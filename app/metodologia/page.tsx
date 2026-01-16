@@ -8,11 +8,11 @@ import { PilaresMetodologia } from "@/components/metodologia/pilares-metodologia
 import { FormacaoSection } from "@/components/metodologia/formacao-section"
 import { EticaMetodologia } from "@/components/metodologia/etica-metodologia"
 import { EssenciaSection } from "@/components/metodologia/essencia-section"
+import { siteConfig } from "@/lib/site-data"
 
 export const metadata = {
-  title: "Metodologia Trimegista | Odinn Trimegistos",
-  description:
-    "A ciência simbólica aplicada à vida real. Conheça a Metodologia Trimegista: Tarot, Astrologia, Runas, Rituais e Alquimia para transformação consciente.",
+  title: siteConfig.metodologia.metadata.title,
+  description: siteConfig.metodologia.metadata.description,
 }
 
 export default function MetodologiaPage() {

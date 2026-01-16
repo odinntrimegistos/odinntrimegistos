@@ -44,7 +44,7 @@ export function Footer() {
             ODINN TRIMEGISTOS
           </Link>
 
-          <p className="text-sm text-bone/80 italic mb-6 max-w-md mx-auto">"{labels.quote}"</p>
+          <p className="text-sm text-bone/80 italic mb-6 max-w-md mx-auto">&quot;{labels.quote}&quot;</p>
 
           <p className="text-xs text-sand/40">
             &copy; {new Date().getFullYear()} Odinn Trimegistos. {labels.rights}.

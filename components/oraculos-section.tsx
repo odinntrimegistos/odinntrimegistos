@@ -37,8 +37,8 @@ export function OraculosSection() {
             <p className="text-bone text-lg">{oraculos.intro}</p>
             <p className="text-sand/80">{oraculos.description}</p>
             <div className="grid md:grid-cols-2 gap-4 py-4">
-              <p className="text-sand/70 italic font-bold">"{oraculos.tarotDesc}"</p>
-              <p className="text-sand/70 italic font-bold">"{oraculos.runasDesc}"</p>
+              <p className="text-sand/70 italic font-bold">&quot;{oraculos.tarotDesc}&quot;</p>
+              <p className="text-sand/70 italic font-bold">&quot;{oraculos.runasDesc}&quot;</p>
             </div>
             <p className="text-sand/70 text-sm">{oraculos.note}</p>
             <p className="text-bone font-display italic text-center pt-4 text-xl font-bold">{oraculos.closing}</p>
