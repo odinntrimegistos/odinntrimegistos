@@ -1,5 +1,6 @@
 "use client"
 
+import { motion } from "framer-motion"
 import { Star, Flame, Shield } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { EgyptianDivider, EyeOfHorus } from "@/components/egyptian-decorations"
@@ -34,26 +35,35 @@ const pillars = [
 
 export function MethodologySection() {
   return (
-    <section id="metodologia" className="py-24 md:py-32 relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="metodologia" className="relative overflow-hidden">
+      {/* Gradientes de transição superior e inferior com fade */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <div className="max-w-5xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
           <EyeOfHorus className="w-12 h-8 text-gold mx-auto mb-6" />
 
           <p className="text-gold text-sm tracking-[0.3em] uppercase mb-4">A Ciência da Realização</p>
 
           <h2
-            className="text-3xl md:text-4xl tracking-wide mb-6 text-foreground"
-            style={{ fontFamily: "var(--font-display)" }}
+            className="font-display text-3xl md:text-4xl tracking-wide mb-6 text-foreground"
           >
             METODOLOGIA TRIMEGISTOS
           </h2>
 
           <EgyptianDivider className="mb-6" />
-
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Três pilares. Uma integração. A síntese entre o Saber, o Fazer e o Ser que transforma conhecimento em
-            realidade vivida.
-          </p>
         </AnimatedSection>
 
         <AnimatedStagger className="grid md:grid-cols-3 gap-8">
@@ -64,7 +74,7 @@ export function MethodologySection() {
                   <div className="w-16 h-16 mx-auto mb-4 border border-gold/30 flex items-center justify-center group-hover:border-gold/60 group-hover:bg-gold/5 transition-all duration-300">
                     <pillar.icon className="w-8 h-8 text-gold" />
                   </div>
-                  <CardTitle className="text-gold text-xl tracking-wide" style={{ fontFamily: "var(--font-display)" }}>
+                  <CardTitle className="font-display text-gold text-xl tracking-wide">
                     {pillar.title}
                   </CardTitle>
                   <p className="text-muted-foreground text-sm uppercase tracking-wider">{pillar.subtitle}</p>

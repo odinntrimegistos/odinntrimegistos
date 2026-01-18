@@ -1,7 +1,10 @@
+"use client"
+
 import { SigilBody, SigilMind, SigilSoul } from "@/components/sigils"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
 
 export function PilaresMetodologia() {
+  const siteConfig = useSiteConfig()
   const pilaresConfig = siteConfig.metodologia.pilares
 
   const sigilMap = {

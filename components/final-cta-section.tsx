@@ -15,7 +15,7 @@ export function FinalCTASection() {
     <section className="py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 temple-radial opacity-40" />
 
-      <div className="max-w-3xl mx-auto px-6 relative z-10 text-center">
+      <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
         <AnimatedSection>
           <EgyptianDivider className="mb-12" />
 

@@ -1,13 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Cinzel_Decorative, Montserrat, Geist_Mono } from "next/font/google"
+import { Marcellus, Montserrat, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { I18nClientProvider } from "@/components/i18n-provider"
 import "./globals.css"
 
-const cinzel = Cinzel_Decorative({
+const marcellus = Marcellus({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400"],
   variable: "--font-display",
 })
 
@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     "magia egípcia",
   ],
   authors: [{ name: "Odinn Trimegistos" }],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   openGraph: {
     title: "Odinn Trimegistos | Mago e Mentor Espiritual",
     description: "Espiritualidade sem fantasia. Clareza acima de ilusão.",
@@ -54,7 +55,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${cinzel.variable} ${montserrat.variable} ${geistMono.variable} font-sans antialiased grain`}>
+      <body
+        className={`${marcellus.variable} ${montserrat.variable} ${geistMono.variable} font-sans antialiased grain`}
+      >
         <I18nClientProvider>{children}</I18nClientProvider>
         <Analytics />
       </body>

@@ -3,7 +3,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection, AnimatedStagger, AnimatedCard } from "@/components/animations"
-import { siteConfig, formatPrice } from "@/lib/site-data"
+import { siteConfig } from "@/lib/site-data"
+import { formatPrice } from "@/lib/format"
 import { motion } from "framer-motion"
 import { Clock, Sparkles, Star, Flame, Compass, User, Briefcase } from "lucide-react"
 import Link from "next/link"
@@ -59,8 +60,23 @@ export function ServicesSection() {
   const whatsappLink = siteConfig.links.whatsapp
 
   return (
-    <section id="servicos" className="py-24 md:py-32 relative overflow-hidden bg-graphite/50">
-      <div className="max-w-6xl mx-auto px-6 relative z-10">
+    <section id="servicos" className="relative overflow-hidden bg-graphite/50">
+      {/* Gradientes de transição superior e inferior com fade */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
         <AnimatedSection className="text-center mb-16">
           <p className="font-display text-gold tracking-[0.3em] uppercase text-xs mb-4">Investimento</p>
 
@@ -136,7 +152,7 @@ export function ServicesSection() {
                               rel="noopener noreferrer"
                               className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors"
                             >
-                              {siteConfig.hero?.cta ?? "Agendar →"}
+                              {siteConfig.hero?.cta ?? "Agendar"}
                             </Link>
                           </CardContent>
                         </Card>

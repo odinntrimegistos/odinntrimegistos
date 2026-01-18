@@ -1,7 +1,10 @@
+"use client"
+
 import { Eye, Brain, Sparkles } from "lucide-react"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
 
 export function ComoFunciona() {
+  const siteConfig = useSiteConfig()
   const { comoFunciona } = siteConfig.metodologia
 
   const iconMap = {

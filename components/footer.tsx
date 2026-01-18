@@ -3,29 +3,22 @@
 import Link from "next/link"
 import { EyeOfHorus } from "@/components/egyptian-decorations"
 import { motion } from "framer-motion"
-import ImageBackground from "@/components/image-background"
 import { useI18n } from "@/lib/i18n"
+import { siteConfig } from "@/lib/site-data"
 
 export function Footer() {
   const { locale } = useI18n()
 
   const labels =
     locale === "pt"
-      ? { quote: "Eu não te digo no que acreditar. Eu te ajudo a enxergar.", rights: "Todos os direitos reservados" }
-      : { quote: "I don't tell you what to believe. I help you see.", rights: "All rights reserved" }
+      ? {
+          quote: "Você não precisa acreditar em nada. Precisa apenas estar disposto a ver.",
+          privacy: "Atendimentos Confidenciais.",
+        }
+      : { quote: "You don't need to believe anything. You only need to be willing to see.", privacy: "Confidential sessions." }
 
   return (
-    <footer className="py-16 border-t border-gold/10 relative bg-obsidian overflow-hidden">
-      <div className="absolute inset-0 opacity-30 pointer-events-none">
-        <ImageBackground
-          src="/images/footer-bg.jpg"
-          alt="footer bg"
-          wrapperClassName="absolute inset-0"
-          imgClassName="object-cover image-unify opacity-30"
-          overlayClassName="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
-        />
-      </div>
-
+    <footer className="py-14 border-t border-gold/10 relative bg-black overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <motion.div
           className="flex justify-center mb-8"
@@ -37,17 +30,41 @@ export function Footer() {
         </motion.div>
 
         <div className="text-center">
-          <Link
-            href="/"
-            className="font-display text-lg tracking-[.25em] text-gold/80 hover:text-gold transition-colors inline-block mb-4"
-          >
+          <Link href="/" className="font-display text-sm tracking-[.35em] text-gold/80 hover:text-gold transition-colors">
             ODINN TRIMEGISTOS
           </Link>
 
-          <p className="text-sm text-bone/80 italic mb-6 max-w-md mx-auto">&quot;{labels.quote}&quot;</p>
+          <p className="text-sm text-bone/75 italic mt-4 max-w-xl mx-auto">&quot;{labels.quote}&quot;</p>
 
-          <p className="text-xs text-sand/40">
-            &copy; {new Date().getFullYear()} Odinn Trimegistos. {labels.rights}.
+          <div className="mt-8 flex items-center justify-center gap-4 text-xs text-sand/50">
+            <Link
+              href={`${siteConfig.links.whatsapp}?text=${encodeURIComponent("Olá, quero entender meu momento.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              Whatsapp
+            </Link>
+            <span className="text-sand/40">•</span>
+            <Link
+              href={siteConfig.links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              Instagram
+            </Link>
+            <span className="text-sand/40">•</span>
+            <Link
+              href={`mailto:${siteConfig.links.email}`}
+              className="hover:text-gold transition-colors"
+            >
+              E-mail
+            </Link>
+          </div>
+
+          <p className="text-xs text-sand/40 mt-6">
+            &copy; {new Date().getFullYear()} Odinn Trimegistos. {labels.privacy}
           </p>
         </div>
       </div>

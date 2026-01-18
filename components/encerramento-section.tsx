@@ -4,19 +4,39 @@ import Link from "next/link"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection } from "@/components/animations"
 import { motion } from "framer-motion"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
+import { useI18n } from "@/lib/i18n"
 import { ArrowRight } from "lucide-react"
 
 export function EncerramentoSection() {
+  const siteConfig = useSiteConfig()
+  const { locale } = useI18n()
   const encerramento = siteConfig.encerramento
-  const whatsappMessage = encodeURIComponent("Olá, gostaria de agendar um atendimento.")
+  const whatsappMessage = encodeURIComponent(
+    locale === "pt" ? "Olá, gostaria de agendar um atendimento." : "Hello, I would like to book a session.",
+  )
   const whatsappLink = `${siteConfig.links.whatsapp}?text=${whatsappMessage}`
 
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden">
+    <section className="relative overflow-hidden">
+      {/* Gradientes de transição superior e inferior com fade */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
       <div className="absolute inset-0 temple-radial opacity-40" />
 
-      <div className="max-w-3xl mx-auto px-6 relative z-10 text-center">
+      <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
         <AnimatedSection>
           <EgyptianDivider className="mb-12" />
 
@@ -26,8 +46,12 @@ export function EncerramentoSection() {
             transition={{ duration: 0.8 }}
             className="space-y-4 mb-12"
           >
-            <p className="font-display text-2xl md:text-3xl text-bone">{encerramento.text}</p>
-            <p className="text-sand/80 text-lg">{encerramento.subtext}</p>
+            {encerramento?.text && (
+              <p className="font-display text-2xl md:text-3xl text-bone">{encerramento.text}</p>
+            )}
+            {encerramento?.subtext && (
+              <p className="text-sand/80 text-lg">{encerramento.subtext}</p>
+            )}
           </motion.div>
 
           <motion.div

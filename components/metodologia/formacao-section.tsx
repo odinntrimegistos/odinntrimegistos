@@ -1,7 +1,10 @@
+"use client"
+
 import { GraduationCap } from "lucide-react"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
 
 export function FormacaoSection() {
+  const siteConfig = useSiteConfig()
   const { formacao } = siteConfig.metodologia
 
   return (

@@ -35,13 +35,13 @@ const translations = {
     "about.p1":
       "Eu não nasci com dons especiais. Não fui escolhido por nenhuma entidade, não tive nenhuma experiência mística na infância e não carrego nenhuma linhagem espiritual secreta.",
     "about.p2":
-      "Comecei como cético. Cresci numa família católica nominal que não praticava nada além do Natal. Minha aproximação com o oculto veio pela filosofia — queria entender por que tantas pessoas inteligentes ao longo da história levaram essas coisas a sério.",
+      "Comecei como cético. Cresci numa família católica nominal que não praticava nada além do Natal. Minha aproximação com o oculto veio pela filosofia, queria entender por que tantas pessoas inteligentes ao longo da história levaram essas coisas a sério.",
     "about.p3":
       "Estudei tudo que pude: hermetismo, cabala, astrologia tradicional, tarot, goécia, magia do caos, tradições nórdicas, espiritismo, umbanda. Não como crente, mas como pesquisador. E em algum momento, a pesquisa virou prática.",
     "about.p4":
       "Percebi que não importava muito em que eu acreditava. O que importava era que as técnicas funcionavam.",
     "about.quote":
-      "Hoje trabalho com magia como um técnico: sem fé cega, sem promessas milagrosas, sem ego inflado. Meu trabalho é empírico — observo o que funciona, descarto o que não funciona, e ajusto conforme necessário.",
+      "Hoje trabalho com magia como um técnico: sem fé cega, sem promessas milagrosas, sem ego inflado. Meu trabalho é empírico, observo o que funciona, descarto o que não funciona, e ajusto conforme necessário.",
 
     // Pillars
     "pillars.title": "Os Três Pilares",
@@ -123,7 +123,7 @@ const translations = {
     "howItWorks.subtitle": "Um processo simples e direto",
     "howItWorks.step1.title": "Contato Inicial",
     "howItWorks.step1.description":
-      "Você me conta brevemente o que está buscando. Sem formulários longos — uma conversa direta.",
+      "Você me conta brevemente o que está buscando. Sem formulários longos, uma conversa direta.",
     "howItWorks.step2.title": "Avaliação",
     "howItWorks.step2.description":
       "Analiso sua situação e indico o serviço mais adequado. Às vezes o que você acha que precisa não é o que realmente vai resolver.",
@@ -137,7 +137,7 @@ const translations = {
     "ethics.title": "Minha Ética",
     "ethics.subtitle": "Princípios inegociáveis",
     "ethics.item1": "Não faço trabalhos para prejudicar terceiros. Magia destrutiva existe, mas não é meu caminho.",
-    "ethics.item2": "Não prometo resultados impossíveis. Sou honesto sobre limitações — minhas e da prática.",
+    "ethics.item2": "Não prometo resultados impossíveis. Sou honesto sobre limitações, minhas e da prática.",
     "ethics.item3": "Não crio dependência. Meu objetivo é que você precise cada vez menos de mim.",
     "ethics.item4": "Não misturo fé com técnica. Você não precisa acreditar em nada específico.",
     "ethics.item5": "Confidencialidade absoluta. O que você me conta fica entre nós.",
@@ -148,7 +148,7 @@ const translations = {
     "contact.title": "Iniciar Conversa",
     "contact.subtitle": "O primeiro passo é simples",
     "contact.description":
-      "Entre em contato pelo WhatsApp ou Instagram. Conte brevemente o que está buscando. Sem compromisso — a conversa inicial é gratuita.",
+      "Entre em contato pelo WhatsApp ou Instagram. Conte brevemente o que está buscando. Sem compromisso, a conversa inicial é gratuita.",
     "contact.whatsapp": "WhatsApp",
     "contact.instagram": "Instagram",
     "contact.email": "Email",
@@ -181,14 +181,12 @@ const translations = {
     "about.p1":
       "I wasn't born with special gifts. I wasn't chosen by any entity, had no mystical childhood experiences, and carry no secret spiritual lineage.",
     "about.p2":
-      "I started as a skeptic. I grew up in a nominally Catholic family that practiced nothing beyond Christmas. My approach to the occult came through philosophy — I wanted to understand why so many intelligent people throughout history took these things seriously.",
+      "I started as a skeptic. I grew up in a nominally Catholic family that practiced nothing beyond Christmas. My approach to the occult came through philosophy, I wanted to understand why so many intelligent people throughout history took these things seriously.",
     "about.p3":
       "I studied everything I could: hermeticism, kabbalah, traditional astrology, tarot, goetia, chaos magic, Norse traditions, spiritism, umbanda. Not as a believer, but as a researcher. And at some point, research became practice.",
     "about.p4": "I realized it didn't matter much what I believed. What mattered was that the techniques worked.",
     "about.quote":
-      "Today I work with magic as a technician: without blind faith, without miraculous promises, without inflated ego. My work is empirical — I observe what works, discard what doesn't, and adjust as needed.",
-
-    // Pillars
+      "Today I work with magic as a technician: without blind faith, without miraculous promises, without inflated ego. My work is empirical, I observe what works, discard what doesn't, and adjust as needed.",
     "pillars.title": "The Three Pillars",
     "pillars.subtitle": "Body, Mind and Soul",
     "pillars.body.title": "Body",
@@ -266,7 +264,7 @@ const translations = {
     "howItWorks.subtitle": "A simple and direct process",
     "howItWorks.step1.title": "Initial Contact",
     "howItWorks.step1.description":
-      "You briefly tell me what you're looking for. No long forms — a direct conversation.",
+      "You briefly tell me what you're looking for. No long forms, a direct conversation.",
     "howItWorks.step2.title": "Assessment",
     "howItWorks.step2.description":
       "I analyze your situation and recommend the most suitable service. Sometimes what you think you need isn't what will actually solve it.",
@@ -280,7 +278,7 @@ const translations = {
     "ethics.title": "My Ethics",
     "ethics.subtitle": "Non-negotiable principles",
     "ethics.item1": "I don't do work to harm others. Destructive magic exists, but it's not my path.",
-    "ethics.item2": "I don't promise impossible results. I'm honest about limitations — mine and the practice's.",
+    "ethics.item2": "I don't promise impossible results. I'm honest about limitations, mine and the practice's.",
     "ethics.item3": "I don't create dependency. My goal is for you to need me less and less.",
     "ethics.item4": "I don't mix faith with technique. You don't need to believe in anything specific.",
     "ethics.item5": "Absolute confidentiality. What you tell me stays between us.",
@@ -291,7 +289,7 @@ const translations = {
     "contact.title": "Start a Conversation",
     "contact.subtitle": "The first step is simple",
     "contact.description":
-      "Get in touch via WhatsApp or Instagram. Briefly tell me what you're looking for. No commitment — the initial conversation is free.",
+      "Get in touch via WhatsApp or Instagram. Briefly tell me what you're looking for. No commitment, the initial conversation is free.",
     "contact.whatsapp": "WhatsApp",
     "contact.instagram": "Instagram",
     "contact.email": "Email",
@@ -318,6 +316,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     setLocale(newLocale)
     localStorage.setItem("locale", newLocale)
   }
+
+  useEffect(() => {
+    if (typeof document === "undefined") return
+    document.documentElement.lang = locale === "pt" ? "pt-BR" : "en"
+  }, [locale])
 
   const t = (key: string): string => {
     return translations[locale][key as keyof typeof translations.pt] || key

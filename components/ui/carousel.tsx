@@ -55,6 +55,8 @@ function Carousel({
     {
       ...opts,
       axis: orientation === 'horizontal' ? 'x' : 'y',
+      dragFree: true,
+      containScroll: 'trimSnaps',
     },
     plugins,
   )
@@ -138,8 +140,9 @@ function CarouselContent({ className, ...props }: React.ComponentProps<'div'>) {
   return (
     <div
       ref={carouselRef}
-      className="overflow-hidden"
+      className="overflow-hidden cursor-grab active:cursor-grabbing touch-pan-y"
       data-slot="carousel-content"
+      style={{ touchAction: 'pan-y pinch-zoom' }}
     >
       <div
         className={cn(

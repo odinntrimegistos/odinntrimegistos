@@ -1,6 +1,9 @@
-import { siteConfig } from "@/lib/site-data"
+"use client"
+
+import { useSiteConfig } from "@/lib/site-config"
 
 export function PrincipioFundamental() {
+  const siteConfig = useSiteConfig()
   const { principioFundamental } = siteConfig.metodologia
 
   return (

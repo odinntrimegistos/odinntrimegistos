@@ -1,12 +1,15 @@
+"use client"
+
 import Link from "next/link"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
 
 export function EssenciaSection() {
+  const siteConfig = useSiteConfig()
   const { essencia } = siteConfig.metodologia
 
   return (
-    <section className="relative py-24 px-6">
-      <div className="max-w-3xl mx-auto text-center">
+    <section className="relative py-20 px-6">
+      <div className="max-w-4xl mx-auto text-center">
         <div className="inline-block px-4 py-1 rounded-full border border-gold/30 bg-gold/5 mb-8">
           <span className="text-xs tracking-[.2em] text-gold">{essencia.badge}</span>
         </div>

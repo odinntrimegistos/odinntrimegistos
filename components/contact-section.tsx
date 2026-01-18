@@ -56,7 +56,7 @@ export function ContactSection() {
       <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-gold/5 blur-3xl animate-glow" />
       <div className="absolute bottom-0 right-1/4 w-80 h-80 rounded-full bg-deepred/10 blur-3xl animate-drift" />
 
-      <div className="max-w-2xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
         <AnimatedSection>
           <p className="font-display text-gold tracking-[0.3em] uppercase text-xs mb-4">{labels.label}</p>
 

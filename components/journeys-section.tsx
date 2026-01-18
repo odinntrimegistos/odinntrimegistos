@@ -18,7 +18,7 @@ const journeys = [
   },
   {
     icon: Users,
-    title: "O Caminho de Hermes",
+    title: "CAMINHO DE HERMES",
     duration: "Acompanhamento Mensal",
     price: "R$ 1.200",
     description:
@@ -39,6 +39,21 @@ const journeys = [
 export function JourneysSection() {
   return (
     <section id="jornadas" className="py-24 md:py-32 relative overflow-hidden">
+      {/* Gradientes de transição superior e inferior com fade */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
       {/* Decorative corner */}
       <motion.div
         initial={{ opacity: 0, rotate: 10 }}
@@ -55,8 +70,7 @@ export function JourneysSection() {
           <p className="text-gold text-sm tracking-[0.3em] uppercase mb-4">Transformação Estrutural</p>
 
           <h2
-            className="text-3xl md:text-4xl tracking-wide mb-6 text-foreground"
-            style={{ fontFamily: "var(--font-display)" }}
+            className="font-display text-3xl md:text-4xl tracking-wide mb-6 text-foreground"
           >
             JORNADAS DE ACOMPANHAMENTO
           </h2>
@@ -87,8 +101,7 @@ export function JourneysSection() {
                       </motion.div>
                       <div>
                         <CardTitle
-                          className="text-foreground text-xl mb-1"
-                          style={{ fontFamily: "var(--font-display)" }}
+                          className="font-display text-foreground text-xl mb-1"
                         >
                           {journey.title}
                         </CardTitle>
@@ -96,7 +109,7 @@ export function JourneysSection() {
                       </div>
                     </div>
                     <div className="text-left md:text-right">
-                      <span className="text-gold text-2xl font-bold" style={{ fontFamily: "var(--font-display)" }}>
+                      <span className="font-display text-gold text-2xl font-bold">
                         {journey.price}
                       </span>
                     </div>

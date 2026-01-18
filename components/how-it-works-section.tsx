@@ -7,19 +7,34 @@ import { motion } from "framer-motion"
 import { siteConfig } from "@/lib/site-data"
 
 const movements = siteConfig.comoTrabalho?.movements || []
-const steps = movements.map((m: any, i: number) => {
+const steps = movements.map((m: { number: string; title: string; subtitle: string; description: string; name?: string }, i: number) => {
   const icons = [MessageCircle, Search, Sparkles, CheckCircle]
   return {
     icon: icons[i] ?? MessageCircle,
     number: String(i + 1).padStart(2, "0"),
-    title: m.name,
+    title: m.title,
     description: m.description,
   }
 })
 
 export function HowItWorksSection() {
   return (
-    <section id="como-funciona" className="py-24 md:py-32 relative overflow-hidden">
+    <section id="como-funciona" className="relative overflow-hidden">
+      {/* Gradientes de transição superior e inferior com fade */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
       <div className="max-w-5xl mx-auto px-6">
         <AnimatedSection className="text-center mb-16">
           <p className="font-display text-gold tracking-[0.3em] uppercase text-xs mb-4">O Processo</p>

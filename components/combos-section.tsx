@@ -3,17 +3,41 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection, AnimatedStagger, AnimatedCard } from "@/components/animations"
-import { siteConfig, formatPrice } from "@/lib/site-data"
+import { formatPrice } from "@/lib/format"
+import { useSiteConfig } from "@/lib/site-config"
+import { useI18n } from "@/lib/i18n"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import ImageBackground from "@/components/image-background"
 
 export function CombosSection() {
+  const siteConfig = useSiteConfig()
+  const { locale } = useI18n()
   const combos = siteConfig.combos
   const whatsappLink = siteConfig.links.whatsapp
+  const ctaLabel = siteConfig.combos?.ctaLabel
+
+  const labels =
+    locale === "pt"
+      ? {
+          eyebrow: "Caminhos Recomendados",
+          title: "COMBOS",
+          subtitle: "Pacotes pensados para necessidades específicas",
+          forWho: "Para quem é:",
+          why: "Por que funciona:",
+          ctaFallback: "Agendar",
+        }
+      : {
+          eyebrow: "Recommended Paths",
+          title: "COMBOS",
+          subtitle: "Packages designed for specific needs",
+          forWho: "For whom:",
+          why: "Why it works:",
+          ctaFallback: "Book",
+        }
 
   return (
-    <section id="combos" className="py-24 md:py-32 relative overflow-hidden bg-graphite/50">
+    <section id="combos" className="py-12 md:py-16 relative overflow-hidden bg-graphite/50">
       <div className="absolute inset-0 opacity-20 pointer-events-none">
         <ImageBackground
           src="/images/combo-1.jpg"
@@ -24,16 +48,16 @@ export function CombosSection() {
         />
       </div>
       <div className="max-w-5xl mx-auto px-6 relative z-10">
-        <AnimatedSection className="text-center mb-16">
-          <p className="font-display text-gold tracking-[0.3em] uppercase text-xs mb-4">Caminhos Recomendados</p>
-          <h2 className="font-display text-3xl md:text-4xl tracking-wide mb-2 text-bone">COMBOS</h2>
-          <p className="text-sand/70 mb-6">Pacotes pensados para necessidades específicas</p>
+        <AnimatedSection className="text-center mb-12">
+          <p className="font-display text-gold tracking-[0.3em] uppercase text-xs mb-4">{labels.eyebrow}</p>
+          <h2 className="font-display text-3xl md:text-4xl tracking-wide mb-2 text-bone">{labels.title}</h2>
+          <p className="text-sand/70 mb-6">{labels.subtitle}</p>
           <EgyptianDivider />
         </AnimatedSection>
 
         {/* Combos dos Oráculos */}
-        <div className="mb-16">
-          <AnimatedSection className="mb-8">
+        <div className="mb-12">
+          <AnimatedSection className="mb-6">
             <h3 className="font-display text-xl text-gold mb-2">{combos.oraculos.title}</h3>
             <p className="text-sand/60 text-sm">{combos.oraculos.subtitle}</p>
           </AnimatedSection>
@@ -54,19 +78,21 @@ export function CombosSection() {
                       </div>
                       <div className="space-y-2 text-sm">
                         <p className="text-sand/70">
-                          <span className="text-gold">Para quem é:</span> {combo.forWho}
+                          <span className="text-gold">{labels.forWho}</span> {combo.forWho}
                         </p>
                         <p className="text-sand/70">
-                          <span className="text-gold">Por que funciona:</span> {combo.whyWorks}
+                          <span className="text-gold">{labels.why}</span> {combo.whyWorks}
                         </p>
                       </div>
                       <Link
-                        href={`${whatsappLink}?text=${encodeURIComponent(`Olá, tenho interesse no ${combo.name}`)}`}
+                        href={`${whatsappLink}?text=${encodeURIComponent(
+                          locale === "pt" ? `Olá, tenho interesse no ${combo.name}` : `Hello, I'm interested in ${combo.name}`,
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors mt-4"
                       >
-                        {siteConfig.hero?.cta ?? "Agendar →"}
+                        {ctaLabel ?? siteConfig.hero?.cta ?? labels.ctaFallback}
                       </Link>
                     </CardContent>
                   </Card>
@@ -101,19 +127,21 @@ export function CombosSection() {
                       </div>
                       <div className="space-y-2 text-sm">
                         <p className="text-sand/70">
-                          <span className="text-gold">Para quem é:</span> {combo.forWho}
+                          <span className="text-gold">{labels.forWho}</span> {combo.forWho}
                         </p>
                         <p className="text-sand/70">
-                          <span className="text-gold">Por que funciona:</span> {combo.whyWorks}
+                          <span className="text-gold">{labels.why}</span> {combo.whyWorks}
                         </p>
                       </div>
                       <Link
-                        href={`${whatsappLink}?text=${encodeURIComponent(`Olá, tenho interesse no ${combo.name}`)}`}
+                        href={`${whatsappLink}?text=${encodeURIComponent(
+                          locale === "pt" ? `Olá, tenho interesse no ${combo.name}` : `Hello, I'm interested in ${combo.name}`,
+                        )}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors mt-4"
                       >
-                        {siteConfig.hero?.cta ?? "Agendar →"}
+                        {ctaLabel ?? siteConfig.hero?.cta ?? labels.ctaFallback}
                       </Link>
                     </CardContent>
                   </Card>

@@ -13,7 +13,22 @@ export function HowIWorkSection() {
 
   return (
     <section id="como-trabalho" className="py-24 md:py-32 relative overflow-hidden">
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      {/* Gradientes de transição superior e inferior com fade */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: "easeInOut" }}
+        viewport={{ once: true, amount: 0.1 }}
+        className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-obsidian/80 via-obsidian/30 to-transparent pointer-events-none z-10"
+      />
+      <div className="max-w-5xl mx-auto px-6 relative z-10">
         <AnimatedSection className="text-center mb-12">
           <p className="font-display text-gold tracking-[0.3em] uppercase text-xs mb-4">Metodologia</p>
 
