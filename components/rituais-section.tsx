@@ -62,6 +62,9 @@ export function RituaisSection() {
           autoPlay
           muted
           loop
+          playsInline
+          preload="auto"
+          poster="/images/ritual-1.jpg"
           className="absolute inset-0 w-full h-full object-cover object-top"
           style={{ clipPath: "inset(0 0 10% 0)" }}
         >
