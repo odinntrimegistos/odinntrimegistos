@@ -15,6 +15,7 @@ export function HeroSection() {
   const whatsappLink = siteConfig.whatsappHrefFor?.("hero")
 
   const sectionRef = useRef<HTMLElement | null>(null)
+  const videoRef = useRef<HTMLVideoElement | null>(null)
 
   const dustParticles = useMemo(
     () => [
@@ -35,6 +36,13 @@ export function HeroSection() {
   useEffect(() => {
     const el = sectionRef.current
     if (!el) return
+
+    // Try to ensure video playback (some browsers require a user gesture)
+    const videoEl = videoRef.current
+    if (videoEl && typeof videoEl.play === "function") {
+      const p = videoEl.play()
+      if (p && typeof p.then === "function") p.catch(() => undefined)
+    }
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     const finePointer = window.matchMedia("(pointer: fine)").matches
@@ -70,6 +78,7 @@ export function HeroSection() {
       {/* Background Video (hidden on small screens; image fallback used) */}
       <div className="absolute inset-0 w-full h-full">
         <video
+          ref={videoRef}
           autoPlay
           muted
           loop
