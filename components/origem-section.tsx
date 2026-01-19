@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 
 export function OrigemSection() {

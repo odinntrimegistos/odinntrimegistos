@@ -3,7 +3,7 @@
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection, AnimatedStagger, AnimatedItem } from "@/components/animations"
 import { motion } from "framer-motion"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
 import { Eye, Brain, Zap } from "lucide-react"
 

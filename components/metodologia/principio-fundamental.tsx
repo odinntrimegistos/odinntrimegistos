@@ -1,6 +1,6 @@
 "use client"
 
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 
 export function PrincipioFundamental() {
   const siteConfig = useSiteConfig()

@@ -1,7 +1,7 @@
 "use client"
 
 import { GraduationCap } from "lucide-react"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 
 export function FormacaoSection() {
   const siteConfig = useSiteConfig()

@@ -1,7 +1,7 @@
 "use client"
 
 import { SigilBody, SigilMind, SigilSoul } from "@/components/sigils"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 
 export function PilaresMetodologia() {
   const siteConfig = useSiteConfig()

@@ -7,7 +7,7 @@ import { MessageCircle, Mail, Instagram } from "lucide-react"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection } from "@/components/animations"
 import { motion } from "framer-motion"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
 
 export function ContactSection() {

@@ -4,7 +4,7 @@ import Link from "next/link"
 import { ChevronDown } from "lucide-react"
 import { motion } from "framer-motion"
 import { useEffect, useMemo, useRef } from "react"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
 import { EyeOfHorus, AnkhSymbol, PyramidDecoration } from "./egyptian-decorations"
 

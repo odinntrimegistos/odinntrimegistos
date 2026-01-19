@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 
 export function OCaminhoSection() {
   const siteConfig = useSiteConfig()

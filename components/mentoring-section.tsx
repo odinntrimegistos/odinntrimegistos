@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
 import { AnimatedSection, AnimatedCard } from "@/components/animations"
 import { EgyptianDivider } from "@/components/egyptian-decorations"

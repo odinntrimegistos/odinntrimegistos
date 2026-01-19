@@ -1,7 +1,4 @@
-"use client"
-
-import { useMemo } from "react"
-import { useI18n, type Locale } from "@/lib/i18n"
+import { type Locale } from "@/lib/i18n"
 import { siteConfig as siteConfigPt } from "@/lib/site-data"
 import { siteConfigEn } from "@/lib/site-data.en"
 
@@ -185,7 +182,4 @@ export function getSiteConfig(locale: Locale) {
   }
 }
 
-export function useSiteConfig() {
-  const { locale } = useI18n()
-  return useMemo(() => getSiteConfig(locale), [locale])
-}
+// `useSiteConfig` is provided in a client-only wrapper `lib/use-site-config.tsx`

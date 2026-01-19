@@ -4,7 +4,7 @@ import Link from "next/link"
 import { EyeOfHorus } from "@/components/egyptian-decorations"
 import { motion } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 
 export function Footer() {
   const { locale } = useI18n()

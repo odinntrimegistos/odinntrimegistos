@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection } from "@/components/animations"
 import { SigilMind } from "@/components/sigils"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
 import ImageBackground from "@/components/image-background"
 

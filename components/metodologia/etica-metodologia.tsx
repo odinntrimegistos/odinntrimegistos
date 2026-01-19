@@ -1,7 +1,7 @@
 "use client"
 
 import { Shield, Heart, Scale, Compass } from "lucide-react"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 
 export function EticaMetodologia() {
   const siteConfig = useSiteConfig()

@@ -1,6 +1,6 @@
 "use client"
 import { EgyptianCorner } from "@/components/egyptian-decorations"
-import { useSiteConfig } from "@/lib/site-config"
+import { useSiteConfig } from "@/lib/use-site-config"
 import { cn } from "@/lib/utils"
 
 export function MetodologiaHero({ compact = false }: { compact?: boolean }) {
