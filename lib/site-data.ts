@@ -5,7 +5,7 @@ export const siteConfig = {
   heroLines: ["ODINN", "TRIMEGISTOS"],
 
   links: {
-    whatsapp: "https://wa.me/5500000000000",
+    whatsapp: "https://wa.me/5521996102492",
     instagram: "https://instagram.com/odinntrimegistos",
     email: "contato@odinntrimegistos.com",
   },
