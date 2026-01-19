@@ -66,14 +66,55 @@ export function getSiteConfig(locale: Locale) {
     instagram: normalizeInstagram(process.env.NEXT_PUBLIC_INSTAGRAM),
     email: process.env.NEXT_PUBLIC_EMAIL,
   }
+  const links = {
+    ...(merged as any).links,
+    whatsapp: envLinks.whatsapp || (merged as any).links?.whatsapp,
+    instagram: envLinks.instagram || (merged as any).links?.instagram,
+    email: envLinks.email || (merged as any).links?.email,
+  }
+
+  const whatsappMessageFor = (key: string | undefined, params?: Record<string, string>) => {
+    const isEn = locale === "en"
+    const t = (pt: string, en: string) => (isEn ? en : pt)
+    if (!key) return t("Olá, gostaria de agendar um atendimento.", "Hello, I would like to book a session.")
+
+    switch (key) {
+      case "hero":
+        return t("Olá, gostaria de agendar um atendimento.", "Hello, I would like to book a session.")
+      case "finalInvite":
+      case "contact":
+        return t("Olá, quero entender meu momento.", "Hello, I want to understand my moment.")
+      case "service":
+        return t(
+          `Olá, gostaria de agendar: ${params?.name ?? "serviço"}`,
+          `Hello, I'd like to book: ${params?.name ?? "service"}`,
+        )
+      case "program":
+      case "mentoria":
+        return t(
+          `Olá, tenho interesse em: ${params?.name ?? "mentoria"}`,
+          `Hello, I'm interested in: ${params?.name ?? "mentoring"}`,
+        )
+      case "ritual":
+        return t(
+          `Olá, gostaria de solicitar a Análise de Viabilidade para uma Invocação.`,
+          `Hello, I'd like to request the Viability Analysis for an Invocation.`,
+        )
+      default:
+        return t("Olá, gostaria de agendar um atendimento.", "Hello, I would like to book a session.")
+    }
+  }
+
+  const whatsappHrefFor = (key?: string, params?: Record<string, string>) => {
+    const base = links.whatsapp
+    if (!base) return undefined
+    const msg = whatsappMessageFor(key, params)
+    return msg ? `${base}?text=${encodeURIComponent(msg)}` : base
+  }
+
   return {
     ...merged,
-    links: {
-      ...(merged as any).links,
-      whatsapp: envLinks.whatsapp || (merged as any).links?.whatsapp,
-      instagram: envLinks.instagram || (merged as any).links?.instagram,
-      email: envLinks.email || (merged as any).links?.email,
-    },
+    links,
     etica:
       (merged as any).etica ?? {
         title: "ÉTICA E RESPONSABILIDADE",
@@ -139,6 +180,8 @@ export function getSiteConfig(locale: Locale) {
           cta: { href: "/#servicos", label: "Ver Serviços e Mentorias" },
         },
       },
+    whatsappMessageFor,
+    whatsappHrefFor,
   }
 }
 

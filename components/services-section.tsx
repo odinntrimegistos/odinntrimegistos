@@ -57,7 +57,7 @@ export function ServicesSection() {
     (typeof siteConfig.services)[keyof typeof siteConfig.services],
   ][]
 
-  const whatsappLink = siteConfig.links.whatsapp
+  const whatsappLink = siteConfig.whatsappHrefFor
 
   return (
     <section id="servicos" className="relative overflow-hidden bg-graphite/50">
@@ -146,12 +146,7 @@ export function ServicesSection() {
                           </CardHeader>
                           <CardContent className="space-y-4">
                             <p className="text-sand/70 text-sm leading-relaxed">{service.description}</p>
-                            <Link
-                              href={`${whatsappLink}?text=${encodeURIComponent(`Olá, gostaria de agendar: ${service.name}`)}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors"
-                            >
+                            <Link href={whatsappLink?.("service", { name: service.name })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors">
                               {siteConfig.hero?.cta ?? "Agendar"}
                             </Link>
                           </CardContent>

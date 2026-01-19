@@ -11,10 +11,7 @@ import { EyeOfHorus, AnkhSymbol, PyramidDecoration } from "./egyptian-decoration
 export function HeroSection() {
   const siteConfig = useSiteConfig()
   const { locale } = useI18n()
-  const whatsappMessage = encodeURIComponent(
-    locale === "pt" ? "Olá, gostaria de agendar um atendimento." : "Hello, I would like to book a session.",
-  )
-  const whatsappLink = `${siteConfig.links.whatsapp}?text=${whatsappMessage}`
+  const whatsappLink = siteConfig.whatsappHrefFor?.("hero")
 
   const sectionRef = useRef<HTMLElement | null>(null)
 

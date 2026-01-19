@@ -63,9 +63,7 @@ export function TerapiasSection() {
 
               {/* CTA */}
               <motion.a
-                href={`${siteConfig.links.whatsapp}?text=${encodeURIComponent(
-                  locale === 'pt' ? `Olá, gostaria de agendar: ${program.name}` : `Hello, I'd like to book: ${program.name}`
-                )}`}
+                href={siteConfig.whatsappHrefFor?.("service", { name: program.name })}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center px-6 py-3 bg-gold/10 hover:bg-gold/20 border border-gold/30 rounded text-gold font-mono text-sm transition-all"

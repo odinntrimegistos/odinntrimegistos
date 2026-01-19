@@ -12,10 +12,8 @@ import ImageBackground from "@/components/image-background"
 
 export function FinalInviteSection() {
   const { locale } = useI18n()
-  const whatsappMessage = encodeURIComponent(
-    locale === "pt" ? "Olá, quero entender meu momento." : "Hello, I want to understand my moment.",
-  )
-  const whatsappLink = `${siteConfig.links.whatsapp}?text=${whatsappMessage}`
+  const siteCfg = useSiteConfig()
+  const whatsappLink = siteCfg.whatsappHrefFor?.("finalInvite")
 
   const content =
     locale === "pt"

@@ -7,15 +7,13 @@ import { MessageCircle, Mail, Instagram } from "lucide-react"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection } from "@/components/animations"
 import { motion } from "framer-motion"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
 import { useI18n } from "@/lib/i18n"
 
 export function ContactSection() {
   const { locale } = useI18n()
-  const whatsappMessage = encodeURIComponent(
-    locale === "pt" ? "Olá, gostaria de agendar um atendimento." : "Hello, I would like to schedule a session.",
-  )
-  const whatsappLink = `${siteConfig.links.whatsapp}?text=${whatsappMessage}`
+  const siteCfg = useSiteConfig()
+  const whatsappLink = siteCfg.whatsappHrefFor?.("contact")
 
   const labels =
     locale === "pt"

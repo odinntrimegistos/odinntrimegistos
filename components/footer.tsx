@@ -4,10 +4,11 @@ import Link from "next/link"
 import { EyeOfHorus } from "@/components/egyptian-decorations"
 import { motion } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
 
 export function Footer() {
   const { locale } = useI18n()
+  const siteConfig = useSiteConfig()
 
   const labels =
     locale === "pt"
@@ -37,12 +38,7 @@ export function Footer() {
           <p className="text-sm text-bone/75 italic mt-4 max-w-xl mx-auto">&quot;{labels.quote}&quot;</p>
 
           <div className="mt-8 flex items-center justify-center gap-4 text-xs text-sand/50">
-            <Link
-              href={`${siteConfig.links.whatsapp}?text=${encodeURIComponent("Olá, quero entender meu momento.")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gold transition-colors"
-            >
+            <Link href={siteConfig.whatsappHrefFor?.("finalInvite")} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
               Whatsapp
             </Link>
             <span className="text-sand/40">•</span>
