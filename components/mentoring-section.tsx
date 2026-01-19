@@ -1,11 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { siteConfig } from "@/lib/site-data"
+import { useSiteConfig } from "@/lib/site-config"
+import { useI18n } from "@/lib/i18n"
 import { AnimatedSection, AnimatedCard } from "@/components/animations"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 
 export function MentoringSection() {
+  const siteConfig = useSiteConfig()
+  const { locale } = useI18n()
   const content = siteConfig.mentorias
 
   if (!content) return null
@@ -48,7 +51,9 @@ export function MentoringSection() {
 
               {/* CTA */}
               <motion.a
-                href="https://wa.me/5591981429696"
+                href={`${siteConfig.links.whatsapp}?text=${encodeURIComponent(
+                  locale === 'pt' ? `Olá, gostaria de agendar: ${program.name}` : `Hello, I'd like to book: ${program.name}`
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center px-6 py-3 bg-gold/10 hover:bg-gold/20 border border-gold/30 rounded text-gold font-mono text-sm transition-all"
