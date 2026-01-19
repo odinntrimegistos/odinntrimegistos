@@ -7,6 +7,7 @@ import { useEffect, useMemo, useRef } from "react"
 import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
 import { EyeOfHorus, AnkhSymbol, PyramidDecoration } from "./egyptian-decorations"
+import ImageBackground from "@/components/image-background"
 
 export function HeroSection() {
   const siteConfig = useSiteConfig()
@@ -66,7 +67,7 @@ export function HeroSection() {
       }}
       className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Video */}
+      {/* Background Video (hidden on small screens; image fallback used) */}
       <div className="absolute inset-0 w-full h-full">
         <video
           autoPlay
@@ -75,11 +76,17 @@ export function HeroSection() {
           playsInline
           preload="auto"
           poster="/images/hero.jpg"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover hidden sm:block"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <ImageBackground
+          src="/images/hero.jpg"
+          alt="hero background"
+          wrapperClassName="absolute inset-0 sm:hidden"
+          imgClassName="object-cover image-unify"
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/70 via-obsidian/50 to-obsidian" />
       </div>
 
