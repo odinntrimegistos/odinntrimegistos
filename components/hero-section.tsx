@@ -55,6 +55,13 @@ export function HeroSection() {
 
       el.style.setProperty("--parallax-x", `${x * 14}px`)
       el.style.setProperty("--parallax-y", `${y * 10}px`)
+
+      // Try to resume video playback on interaction (fallback for strict autoplay policies)
+      const videoEl = videoRef.current
+      if (videoEl && typeof videoEl.play === "function") {
+        const p = videoEl.play()
+        if (p && typeof p.then === "function") p.catch(() => undefined)
+      }
     }
 
     window.addEventListener("pointermove", handle, { passive: true })
@@ -76,7 +83,7 @@ export function HeroSection() {
       className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Video (hidden on small screens; image fallback used) */}
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full" style={{ transform: "translate3d(var(--parallax-x), var(--parallax-y), 0)" }}>
         <video
           ref={videoRef}
           autoPlay
