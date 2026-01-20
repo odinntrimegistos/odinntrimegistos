@@ -8,11 +8,20 @@ const nextConfig = {
   },
   headers: async () => [
     {
+      source: '/images/:path*',
+      headers: [
+        {
+          key: 'Cache-Control',
+          value: 'public, max-age=2592000, immutable',
+        },
+      ],
+    },
+    {
       source: '/videos/:path*',
       headers: [
         {
           key: 'Cache-Control',
-          value: 'public, max-age=3600, must-revalidate',
+          value: 'public, max-age=604800, must-revalidate',
         },
         {
           key: 'Content-Type',
