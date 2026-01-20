@@ -18,7 +18,6 @@ export function Header() {
   const navLinks =
     locale === "pt"
       ? [
-          { href: "/", label: "HOME" },
           { href: "/#origem", label: "ORIGEM" },
           { href: "/#metodologia", label: "METODOLOGIA" },
           { href: "/#alquimia", label: "ALQUIMIA" },
@@ -28,7 +27,6 @@ export function Header() {
           { href: "/#circulo-chave", label: "CÍRCULO DA CHAVE" },
         ]
       : [
-          { href: "/", label: "HOME" },
           { href: "/#origem", label: "ORIGIN" },
           { href: "/#metodologia", label: "METHODOLOGY" },
           { href: "/#alquimia", label: "ALCHEMY" },

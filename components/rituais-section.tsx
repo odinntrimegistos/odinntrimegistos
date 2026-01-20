@@ -73,16 +73,14 @@ export function RituaisSection() {
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           poster="/images/ritual-1.jpg"
-          className="absolute inset-0 w-full h-full object-cover object-top hidden sm:block"
+          className="absolute inset-0 w-full h-full object-cover object-top"
           style={{ clipPath: "inset(0 0 10% 0)" }}
+          crossOrigin="anonymous"
         >
           <source src="/videos/rituais-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 sm:hidden">
-          <img src="/images/ritual-1.jpg" alt="rituais background" className="w-full h-full object-cover" />
-        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/40 via-graphite/50 to-graphite/60" />
       </div>
       {/* Gradientes de transição superior e inferior com fade */}

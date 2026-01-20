@@ -25,6 +25,7 @@ export function MetodologiaHero({ compact = false }: { compact?: boolean }) {
           preload="metadata"
           poster="/images/hermes-hero-poster.svg"
           aria-hidden="true"
+          crossOrigin="anonymous"
         >
           <source src="/videos/hermes-hero.mp4" type="video/mp4" />
         </video>

@@ -15,7 +15,6 @@ export function HeroSection() {
   const whatsappLink = siteConfig.whatsappHrefFor?.("hero")
 
   const sectionRef = useRef<HTMLElement | null>(null)
-  const videoRef = useRef<HTMLVideoElement | null>(null)
 
   const dustParticles = useMemo(
     () => [
@@ -37,13 +36,6 @@ export function HeroSection() {
     const el = sectionRef.current
     if (!el) return
 
-    // Try to ensure video playback (some browsers require a user gesture)
-    const videoEl = videoRef.current
-    if (videoEl && typeof videoEl.play === "function") {
-      const p = videoEl.play()
-      if (p && typeof p.then === "function") p.catch(() => undefined)
-    }
-
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
     const finePointer = window.matchMedia("(pointer: fine)").matches
     if (reduceMotion || !finePointer) return
@@ -55,13 +47,6 @@ export function HeroSection() {
 
       el.style.setProperty("--parallax-x", `${x * 14}px`)
       el.style.setProperty("--parallax-y", `${y * 10}px`)
-
-      // Try to resume video playback on interaction (fallback for strict autoplay policies)
-      const videoEl = videoRef.current
-      if (videoEl && typeof videoEl.play === "function") {
-        const p = videoEl.play()
-        if (p && typeof p.then === "function") p.catch(() => undefined)
-      }
     }
 
     window.addEventListener("pointermove", handle, { passive: true })
@@ -82,27 +67,20 @@ export function HeroSection() {
       }}
       className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Video (hidden on small screens; image fallback used) */}
+      {/* Background Video (parallax) */}
       <div className="absolute inset-0 w-full h-full" style={{ transform: "translate3d(var(--parallax-x), var(--parallax-y), 0)" }}>
         <video
-          ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
-          poster="/images/hero.jpg"
-          className="absolute inset-0 w-full h-full object-cover hidden sm:block"
+          preload="metadata"
+          className="absolute inset-0 w-full h-full object-cover"
+          crossOrigin="anonymous"
         >
-          <source src="/videos/logo.mp4" type="video/mp4" />
+          <source src="/videos/bg.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <ImageBackground
-          src="/images/hero.jpg"
-          alt="hero background"
-          wrapperClassName="absolute inset-0 sm:hidden"
-          imgClassName="object-cover image-unify"
-        />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/70 via-obsidian/50 to-obsidian" />
       </div>
 
