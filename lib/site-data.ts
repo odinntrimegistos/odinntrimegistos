@@ -15,7 +15,7 @@ export const siteConfig = {
     title: "Antes de falar, eu precisei escutar muito.",
     highlight:
       "Minha raiz é na Amazônia. Lá, a realidade é densa, tem cheiro, tem som. Crescer ali me tirou a arrogância de achar que a gente controla tudo.\n\nMinha caminhada na magia começou solitária. Não foi em grandes ordens ou templos, foi dentro de casa. Foram 14 anos de estudo silencioso, muitas vezes brigando com textos difíceis, buscando lógica no caos, querendo desmontar as engrenagens do destino para ver como giravam. Eu não queria aparecer; eu só queria entender.\n\nMas livro nenhum ensina sobre gente. A estrada ensina. Como artista, viajei o mundo e aprendi a sentir o outro. Vi que a angústia de alguém do outro lado do planeta não era diferente da minha. A arte me ensinou a ter tato, a perceber o que dói sem ninguém precisar apontar.\n\nHoje, junto essas duas metades. Trago a bagagem desses anos de estudo, mas aplico com o cuidado de quem sabe que está lidando com vidas reais. Não vejo você como um mapa astral ou um número. Vejo sua história. E uso o que sei para ajudar você a escrever as próximas páginas com mais clareza.",
-    imageSrc: "/images/mentor-desert.jpg",
+    imageSrc: "/images/eu2.png",
     diferencialTitle: "DIFERENCIAL",
     diferencialItems: [
       "Não é crença religiosa.",
