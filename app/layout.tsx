@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Odinn Trimegistos | Mago e Mentor Espiritual",
+  title: "Odinn Trimegistos",
   description:
     "Mago e mentor espiritual com 12 anos de estudo e prática. Tarot, Astrologia, Hermetismo, Magia Cerimonial e rituais. Espiritualidade sem fantasia.",
   keywords: [
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     apple: "/images/logo-favicon.png",
   },
   openGraph: {
-    title: "Odinn Trimegistos | Mago e Mentor Espiritual",
+    title: "Odinn Trimegistos",
     description: "Espiritualidade sem fantasia. Clareza acima de ilusão.",
     type: "website",
   },
