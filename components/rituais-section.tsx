@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection, AnimatedStagger, AnimatedCard } from "@/components/animations"
@@ -21,7 +21,6 @@ export function RituaisSection() {
   const [rituaisApi, setRituaisApi] = useState<CarouselApi>()
   const [rituaisCurrent, setRituaisCurrent] = useState(0)
   const [rituaisCount, setRituaisCount] = useState(0)
-  const videoRef = useRef<HTMLVideoElement | null>(null)
 
   useEffect(() => {
     if (!rituaisApi) return
@@ -46,14 +45,6 @@ export function RituaisSection() {
     return () => container.removeEventListener('wheel', handleWheel)
   }, [rituaisApi])
 
-  useEffect(() => {
-    const v = videoRef.current
-    if (v && typeof v.play === "function") {
-      const p = v.play()
-      if (p && typeof p.then === "function") p.catch(() => undefined)
-    }
-  }, [])
-
   // Formatação dos pontos do Protocolo de Contratação (invocações)
   const protocolText = rituais?.invocacoes?.protocolDetails ?? ""
   const [protocolLead, protocolRest] = protocolText.split(":")
@@ -67,20 +58,12 @@ export function RituaisSection() {
   return (
     <section id="rituais" className="relative overflow-hidden bg-graphite/50 py-12 md:py-16">
       <div className="absolute inset-0 opacity-20 pointer-events-none overflow-hidden">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/images/ritual-1.jpg"
+        <img
+          src="/images/rituais-bg-frame.jpg"
+          alt="rituais background"
           className="absolute inset-0 w-full h-full object-cover object-top"
           style={{ clipPath: "inset(0 0 10% 0)" }}
-          crossOrigin="anonymous"
-        >
-          <source src="/videos/rituais-bg.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-graphite/40 via-graphite/50 to-graphite/60" />
       </div>
       {/* Gradientes de transição superior e inferior com fade */}
