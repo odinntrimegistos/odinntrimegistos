@@ -31,7 +31,7 @@ export function OrigemSection() {
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Left: Portrait */}
-          <div className="relative rounded-2xl overflow-hidden border border-gold/10 h-[600px]">
+          <div className="relative rounded-2xl overflow-hidden border border-gold/10 h-[800px]">
             <div className="absolute inset-0 bg-obsidian/25" />
             <Image
               src={origem.imageSrc}
