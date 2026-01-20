@@ -67,20 +67,15 @@ export function HeroSection() {
       }}
       className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Video (parallax) */}
+      {/* Background Image (parallax) */}
       <div className="absolute inset-0 w-full h-full" style={{ transform: "translate3d(var(--parallax-x), var(--parallax-y), 0)" }}>
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="absolute inset-0 w-full h-full object-cover"
-          crossOrigin="anonymous"
-        >
-          <source src="/videos/bg.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <ImageBackground
+          src="/images/bg-frame.jpg"
+          alt="hero background"
+          wrapperClassName="absolute inset-0"
+          imgClassName="object-cover image-unify"
+          priority
+        />
         <div className="absolute inset-0 bg-gradient-to-b from-obsidian/70 via-obsidian/50 to-obsidian" />
       </div>
 
