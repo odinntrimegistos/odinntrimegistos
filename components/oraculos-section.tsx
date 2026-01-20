@@ -126,7 +126,7 @@ export function OraculosSection() {
               </div>
               <div className="order-1 md:order-2">
                 <img
-                  src="/images/tarot-bg.png"
+                  src="/images/tarot-bg.jpg"
                   alt={locale === 'pt' ? 'Tarot' : 'Tarot'}
                   className="w-full h-auto rounded-lg opacity-80"
                 />
@@ -213,7 +213,7 @@ export function OraculosSection() {
             <div className="grid md:grid-cols-2 gap-8 items-start mb-6">
               <div>
                 <img
-                  src="/images/runas-bg.png"
+                  src="/images/runas-bg.jpg"
                   alt={locale === 'pt' ? 'Runas' : 'Runes'}
                   className="w-full h-auto rounded-lg opacity-80"
                 />

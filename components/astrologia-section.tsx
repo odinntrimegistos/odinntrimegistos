@@ -76,7 +76,7 @@ export function AstrologiaSection() {
     <section id="astrologia" className="relative overflow-hidden py-12 md:py-16">
       <div className="absolute inset-0 opacity-40 pointer-events-none">
         <ImageBackground
-          src="/images/astro-bg.png"
+          src="/images/astro-bg.jpg"
           alt={locale === 'pt' ? 'fundo de astrologia' : 'astrology background'}
           wrapperClassName="absolute inset-0"
           imgClassName="object-cover image-unify opacity-40 object-center scale-100"
