@@ -1,14 +1,13 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 
 import { EgyptianDivider } from "@/components/egyptian-decorations"
 import { AnimatedSection } from "@/components/animations"
-import { SigilMind } from "@/components/sigils"
 import { useSiteConfig } from "@/lib/use-site-config"
 import { useI18n } from "@/lib/i18n"
-import ImageBackground from "@/components/image-background"
 
 export function FinalInviteSection() {
   const { locale } = useI18n()
@@ -79,9 +78,15 @@ export function FinalInviteSection() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.0, delay: 0.25 }}
             className="mt-14 flex items-center justify-center"
-            aria-label="Logo Sigilo Odinn Trimegistos"
+            aria-label="Logo Odinn Trimegistos"
           >
-            <SigilMind className="w-20 h-20 text-gold/60" />
+            <Image
+              src="/images/logo-favicon.png"
+              alt="Logo Odinn Trimegistos"
+              width={80}
+              height={80}
+              className="opacity-60"
+            />
           </motion.div>
 
           <EgyptianDivider className="mt-12" />
