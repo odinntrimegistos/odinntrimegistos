@@ -70,7 +70,7 @@ export function HeroSection() {
       {/* Background Image (parallax) */}
       <div className="absolute inset-0 w-full h-full" style={{ transform: "translate3d(var(--parallax-x), var(--parallax-y), 0)" }}>
         <ImageBackground
-          src="/images/bg-frame.jpg"
+          src="/images/bg.png"
           alt="hero background"
           wrapperClassName="absolute inset-0"
           imgClassName="object-cover image-unify"
