@@ -14,8 +14,6 @@ export function HeroSection() {
   const { locale } = useI18n()
   const whatsappLink = siteConfig.whatsappHrefFor?.("hero")
 
-  const sectionRef = useRef<HTMLElement | null>(null)
-
   const dustParticles = useMemo(
     () => [
       { top: "18%", left: "22%", size: 18, blur: 6, opacity: 0.14, duration: 10, delay: 0.2 },
@@ -32,43 +30,12 @@ export function HeroSection() {
     [],
   )
 
-  useEffect(() => {
-    const el = sectionRef.current
-    if (!el) return
-
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    const finePointer = window.matchMedia("(pointer: fine)").matches
-    if (reduceMotion || !finePointer) return
-
-    const handle = (event: PointerEvent) => {
-      const rect = el.getBoundingClientRect()
-      const x = (event.clientX - rect.left) / rect.width - 0.5
-      const y = (event.clientY - rect.top) / rect.height - 0.5
-
-      el.style.setProperty("--parallax-x", `${x * 14}px`)
-      el.style.setProperty("--parallax-y", `${y * 10}px`)
-    }
-
-    window.addEventListener("pointermove", handle, { passive: true })
-    return () => window.removeEventListener("pointermove", handle)
-  }, [])
-
   return (
     <section
-      ref={sectionRef}
-      style={{
-        // Desktop-only parallax variables; remain 0 on mobile/reduced-motion.
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        "--parallax-x": "0px",
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
-        "--parallax-y": "0px",
-      }}
       className="relative min-h-screen h-screen flex items-center justify-center overflow-hidden"
     >
       {/* Background Image (parallax) */}
-      <div className="absolute inset-0 w-full h-full" style={{ transform: "translate3d(var(--parallax-x), var(--parallax-y), 0)" }}>
+      <div className="absolute inset-0 w-full h-full">
         <ImageBackground
           src="/images/bg.png"
           alt="hero background"
@@ -86,7 +53,6 @@ export function HeroSection() {
       <div
         aria-hidden
         className="absolute inset-0 pointer-events-none hidden md:block opacity-80"
-        style={{ transform: "translate3d(var(--parallax-x), var(--parallax-y), 0)" }}
       >
         <div className="absolute inset-0 hero-dust animate-drift motion-reduce:animate-none" />
 
