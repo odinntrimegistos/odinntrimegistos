@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { EyeOfHorus } from "@/components/egyptian-decorations"
 import { motion } from "framer-motion"
 import { useI18n } from "@/lib/i18n"
@@ -31,8 +32,17 @@ export function Footer() {
         </motion.div>
 
         <div className="text-center">
-          <Link href="/" className="font-display text-sm tracking-[.35em] text-gold/80 hover:text-gold transition-colors">
-            ODINN TRIMEGISTOS
+          <Link href="/" className="inline-flex flex-col items-center gap-3 group" aria-label="Odinn Trimegistos">
+            <Image
+              src="/images/logo-favicon.png"
+              alt="Logo Odinn Trimegistos"
+              width={120}
+              height={60}
+              className="h-12 w-auto object-contain drop-shadow-[0_0_12px_rgba(255,214,137,0.18)] transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+            <span className="font-display text-sm tracking-[.35em] text-gold/80 group-hover:text-gold transition-colors">
+              ODINN TRIMEGISTOS
+            </span>
           </Link>
 
           <p className="text-sm text-bone/75 italic mt-4 max-w-xl mx-auto">&quot;{labels.quote}&quot;</p>

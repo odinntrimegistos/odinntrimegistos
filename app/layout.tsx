@@ -40,6 +40,11 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Odinn Trimegistos" }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  icons: {
+    icon: "/images/logo-favicon.png",
+    shortcut: "/images/logo-favicon.png",
+    apple: "/images/logo-favicon.png",
+  },
   openGraph: {
     title: "Odinn Trimegistos | Mago e Mentor Espiritual",
     description: "Espiritualidade sem fantasia. Clareza acima de ilusão.",

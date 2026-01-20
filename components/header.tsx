@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -56,8 +57,18 @@ export function Header() {
 
       <div className="max-w-7xl mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <Link href="/" className="font-display text-lg tracking-[.2em] text-gold hover:text-gold-bright transition-colors">
-            ODINN TRIMEGISTOS
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Odinn Trimegistos">
+            <Image
+              src="/images/logo-favicon.png"
+              alt="Logo Odinn Trimegistos"
+              width={160}
+              height={60}
+              priority
+              className="h-10 w-auto object-contain drop-shadow-[0_0_12px_rgba(255,214,137,0.22)] transition-transform duration-300 group-hover:scale-[1.02]"
+            />
+            <span className="font-display text-lg tracking-[.2em] text-gold hover:text-gold-bright transition-colors">
+              ODINN TRIMEGISTOS
+            </span>
           </Link>
 
           {/* Desktop Navigation */}

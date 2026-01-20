@@ -94,7 +94,7 @@ export function HeroSection() {
           poster="/images/hero.jpg"
           className="absolute inset-0 w-full h-full object-cover hidden sm:block"
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/videos/logo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <ImageBackground
@@ -238,21 +238,6 @@ export function HeroSection() {
           <p className="text-sand/90 text-sm md:text-sm tracking-wide leading-relaxed">{siteConfig.hero.intro}</p>
         </motion.div>
 
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1.2 }}
-        >
-          <Link
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-copper inline-flex items-center justify-center rounded-xl px-6 py-3 md:px-8 md:py-3.5 text-sm md:text-base font-display text-bone tracking-[0.14em] transition-all duration-300"
-          >
-            {siteConfig.hero.cta}
-          </Link>
-        </motion.div>
         </div>
       </div>
 
