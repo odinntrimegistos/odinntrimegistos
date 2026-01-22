@@ -130,7 +130,7 @@ export function RituaisSection() {
                       <CardContent className="space-y-4">
                         <p className="text-sand/70 text-sm">{service.description}</p>
                         <Link
-                          href={`${whatsappLink}?text=${encodeURIComponent(
+                          href={service.link ?? `${whatsappLink}?text=${encodeURIComponent(
                             locale === "pt" ? `Olá, gostaria de agendar: ${service.name}` : `Hello, I'd like to book: ${service.name}`,
                           )}`}
                           target="_blank"
