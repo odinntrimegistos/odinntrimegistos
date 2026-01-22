@@ -257,73 +257,46 @@ export const siteConfig = {
     closing: "",
     services: [
       {
-        name: "MAPA DA ALMA",
-        subtitle: "Natal Hermético",
-        icon: "☿",
-        duration: "90 min",
+        name: "MAPA NATAL HERMÉTICO",
         price: 450,
-        description:
-          "Esqueça a personalidade superficial. Aqui analisamos o 'descente da alma': por que desceu para o plano material e como retornar à sua essência divina. Examinamos os planetas, decanatos e casas para entender o veículo (o seu corpo) e o motorista (a sua alma). É o manual de instruções da sua existência.",
+        description: "O Manual de Instruções. Analiso a posição exata das esferas no seu nascimento para revelar a estrutura da sua psique, seus recursos inatos e o 'Fatum' (destino) que você carrega.",
+        link: "https://wa.me/p/25548554611471801/5521996102492",
       },
       {
-        name: "GRANDE OBRA",
-        subtitle: "Propósito & Vocação",
-        icon: "☉",
-        duration: "75 min",
+        name: "A CHAVE DA FORTUNA (Vocacional)",
         price: 360,
-        description:
-          "Uma consulta focada na sua missão. Utilizamos o cálculo do 'Lote da Fortuna' e outros 'Lotes Herméticos' (partes árabes) para descobrir onde está o seu tesouro oculto. Identificamos o caminho exato para o seu sucesso material e realização espiritual. É para quem quer parar de trabalhar por dinheiro e começar a trabalhar por propósito.",
+        description: "Vocação e Dinheiro. Usamos técnicas helenísticas (Lote da Fortuna) para encontrar o ponto matemático onde sua habilidade encontra a recompensa do mundo.",
+        link: "https://wa.me/p/25972321942392791/5521996102492",
       },
       {
-        name: "MOMENTO PERFEITO",
-        subtitle: "Astrologia Eletiva",
-        icon: "⏳",
-        duration: "60 min",
-        price: 260,
-        description:
-          "Vai inaugurar uma empresa? Casar? Iniciar um ritual ou alquimia? O sucesso depende do 'quando'. Eu calculo o momento astrológico exato para alinhar a sua ação humana com a influência celeste favorável. Não nade contra a maré, espere a onda certa.",
+        name: "ELEIÇÃO TEMPORAL (Timing)",
+        price: 270,
+        description: "Estratégia de Guerra. Vai abrir empresa ou assinar contrato? Eu calculo o céu exato para garantir que os ventos cósmicos soprem a favor da sua iniciativa.",
+        link: "https://wa.me/p/25475890022032542/5521996102492",
       },
       {
-        name: "ANATOMIA OCULTA",
-        subtitle: "Astrologia Médica",
-        icon: "⚕️",
-        duration: "75 min",
+        name: "ANATOMIA SUTIL (Saúde)",
         price: 360,
-        description:
-          "Analisamos quais planetas regem quais órgãos no seu sistema e onde estão os desequilíbrios energéticos. O objetivo é a cura e a manutenção da vitalidade, entendendo que a saúde do corpo começa no equilíbrio dos astros internos.",
+        description: "O Corpo reflete o Céu. Descubra quais planetas regem sua vitalidade e quais trânsitos indicam vulnerabilidade. Prevenção para alinhar saúde com seu mapa.",
+        link: "https://wa.me/p/26096521239977609/5521996102492",
       },
       {
-        name: "VÍNCULO",
-        subtitle: "Sinastria Hermética",
-        icon: "♀ ♂",
-        duration: "90 min",
+        name: "SINASTRIA HERMÉTICA",
         price: 450,
-        description:
-          "Não é sobre 'se combinamos', é sobre 'o que viemos aprender juntos'. Examinamos a compatibilidade sob uma perspectiva cármica. Qual é o contrato espiritual entre essas duas almas? Onde um ensina e o outro aprende? Serve para relacionamentos amorosos ou parcerias de negócios.",
+        description: "Química ou Explosão? Sobrepomos dois mapas para ver onde as engrenagens encaixam e onde moem. Entenda a dinâmica real do seu relacionamento ou sociedade.",
+        link: "https://wa.me/p/26090083860628009/5521996102492",
       },
       {
-        name: "CAMINHO DO INICIADO",
-        subtitle: "Esotérica",
-        icon: "🔱",
-        duration: "120 min",
+        name: "A TERCEIRA FORÇA (Composto)",
+        price: 630,
+        description: "A Alma da Relação. Geramos o mapa da entidade 'Nós'. Descubra o propósito final desse encontro e o destino que vocês criarão juntos.",
+        link: "https://wa.me/p/25501945586156353/5521996102492",
+      },
+      {
+        name: "A GRANDE ESCADA (Iniciático)",
         price: 540,
-        description:
-          "A leitura mais profunda da casa. Aplicamos as 7 Leis Herméticas (Mentalismo, Vibração, Ritmo, Causa e Efeito, etc.) sobre o seu mapa astral. É um processo de autoconhecimento radical para quem busca não apenas entender o destino, mas transformar psicologicamente a própria realidade.",
-      },
-      {
-        name: "MAPA COMPOSTO DO RELACIONAMENTO",
-        subtitle: "(Opcional, nível mais profundo)",
-        icon: "♊",
-        duration: "90 min",
-        price: 620,
-        description:
-          "Além da sinastria, esse serviço analisa o mapa do relacionamento em si, como se a relação fosse uma terceira entidade.",
-        details: [
-          "Propósito do vínculo",
-          "Temas centrais da relação",
-          "Desafios inevitáveis",
-          "Potencial de crescimento conjunto",
-        ],
+        description: "Além do Destino. Para ocultistas. Mapeamos sua jornada através das 7 Esferas Planetárias sob a ótica Hermética. O roteiro da sua ascensão espiritual.",
+        link: "https://wa.me/p/25256444730705031/5521996102492",
       },
     ],
     sinastryNote: {
