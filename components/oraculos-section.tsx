@@ -176,7 +176,12 @@ export function OraculosSection() {
                       </CardHeader>
                       <CardContent className="space-y-4">
                         <p className="text-sand/70 text-sm">{service.description}</p>
-                        <Link href={whatsappLink?.("service", { name: service.name })} target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors">
+                        <Link
+                          href={service.link ?? whatsappLink?.("service", { name: service.name })}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-gold/70 hover:text-gold text-sm transition-colors"
+                        >
                           {ctaLabel ?? siteConfig.hero?.cta ?? (locale === 'pt' ? 'Agendar' : 'Book')}
                         </Link>
                       </CardContent>
