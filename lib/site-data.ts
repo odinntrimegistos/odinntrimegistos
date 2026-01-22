@@ -172,20 +172,34 @@ export const siteConfig = {
     sensacao: "",
     services: [
       {
-        name: "ESPELHO INTERNO",
-        subtitle: "",
-        duration: "60 min",
-        price: 216,
-        description:
-          "Mapeamos tudo o que está a acontecer na sua vida agora. Cruzamos o seu momento atual com os desafios ocultos no seu inconsciente, passado recente e tendências de futuro. É uma leitura de diagnóstico completo.",
+        name: "VETOR ÚNICO",
+        price: 63,
+        description: "A resposta cirúrgica. Sem contexto, sem rodeios. É Sim, é Não, ou é Perda de Tempo. Ideal para validação rápida de uma intuição.",
+        link: "https://wa.me/p/25809828145295722/5521996102492",
       },
       {
-        name: "CHAVE DO PROPÓSITO",
-        subtitle: "",
-        duration: "90 min",
+        name: "TRÍADE OPERATIVA",
+        price: 153,
+        description: "A lógica do problema. Mapeamos: Onde você está (Fato), O que te impede (Bloqueio) e A alavanca de mudança (Ação). O mínimo necessário para entender a mecânica da situação.",
+        link: "https://wa.me/p/25884175987879668/5521996102492",
+      },
+      {
+        name: "PENTAGRAMA ELEMENTAL",
+        price: 243,
+        description: "Visão 360º rápida. Analiso a situação sob 5 óticas: Fogo (Vontade), Água (Emoção), Ar (Pensamento), Terra (Recurso) e Espírito (Propósito). Descubra o elemento faltante.",
+        link: "https://wa.me/p/33765606759704241/5521996102492",
+      },
+      {
+        name: "RAIO-X ARQUETÍPICO",
+        price: 216,
+        description: "Diagnóstico de Momento. Mapeamos quais arquétipos estão no comando do seu inconsciente agora e como eles moldam sua realidade. Recalibre seu GPS interno.",
+        link: "https://wa.me/5521996102492?text=Olá%20Odinn,%20vi%20seu%20trabalho%20e%20gostaria%20de%20agendar%20o%20RAIO-X%20ARQUETÍPICO.",
+      },
+      {
+        name: "MANDALA DAS 12 CASAS",
         price: 333,
-        description:
-          "Uma leitura de arquitetura de vida. Analisamos as 12 áreas da sua existência (dinheiro, amor, saúde, carreira, espiritualidade, etc.) simultaneamente. Vemos como uma área está a afetar a outra e alinhamos a sua bússola para a sua verdadeira missão.",
+        description: "Arquitetura Sistêmica. Analisamos as 12 áreas da vida simultaneamente na Roda Zodiacal. Veja como sua carreira impacta seu espiritual e onde está a chave mestre da sua evolução.",
+        link: "https://wa.me/p/25687155450952279/5521996102492",
       },
     ],
     perguntas: {
