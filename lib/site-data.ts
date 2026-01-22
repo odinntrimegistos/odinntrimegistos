@@ -317,32 +317,28 @@ export const siteConfig = {
     closing: "",
     services: [
       {
-        name: "RITUAL DE JÚPITER (EXPANSÃO & OURO)",
-        duration: "",
-        price: 440,
-        description:
-          "Focado em atrair dinheiro, sucesso nos negócios e oportunidades de carreira. Trabalhamos com os Selos de Júpiter para abrir as comportas da prosperidade e destravar o fluxo financeiro que está estagnado. Ideal para empresários ou quem busca promoção.",
+        name: "OPERAÇÃO DE JÚPITER",
+        price: 450,
+        description: "Engenharia de Prosperidade. Evocamos a força de Júpiter para expandir sua influência, atrair recursos e destravar o fluxo financeiro através da hierarquia correta.",
+        link: "https://wa.me/p/25580643958253761/5521996102492",
       },
       {
-        name: "RITUAL DE VÊNUS (MAGNETISMO & DESEJO)",
-        duration: "",
-        price: 350,
-        description:
-          "Não é apenas sobre \"arranjar alguém\", é sobre tornar-se magnético. Trabalhamos com os Selos de Vênus para aumentar o seu charme pessoal, conquistar amores, reacender chamas em relacionamentos frios e provocar o desejo. Torna-se o centro da atração.",
+        name: "OPERAÇÃO DE VÊNUS",
+        price: 360,
+        description: "O Poder de Agregação. Calibramos seu magnetismo pessoal para torná-lo um ponto focal de desejo e admiração. Ideal para amor, diplomacia e negociações.",
+        link: "https://wa.me/p/25523212320663440/5521996102492",
       },
       {
-        name: "MURALHA DE FOGO (PROTEÇÃO ABSOLUTA)",
-        duration: "",
-        price: 350,
-        description:
-          "Baseado na antiga tradição do \"Fiery Wall of Protection\". Esse ritual cria um escudo impenetrável ao redor da sua casa ou do seu corpo. Serve para quebrar feitiços, anular inveja pesada e impedir que demandas espirituais o atinjam. É a defesa máxima.",
+        name: "PROTOCOLO DE MARTE",
+        price: 360,
+        description: "Imunidade Espiritual. Invocamos a força marcial para quebrar demandas, anular inveja e criar um perímetro de segurança impenetrável. Ataque é a melhor defesa.",
+        link: "https://wa.me/p/33347923481523012/5521996102492",
       },
       {
-        name: "TALISMÃS & MOJOS CONSAGRADOS",
-        duration: "",
-        price: 260,
-        description:
-          "Para quem quer carregar a força consigo. Eu confecciono e consagro um Talismã, Pantáculo ou Mojo (saquinho de poder) específico para a sua necessidade. Terá a influência do espírito ou energia planetária sempre no seu bolso, a atuar 24 horas por dia a seu favor. Nota: O objeto físico é enviado para si.",
+        name: "ARTEFATOS CONSAGRADOS",
+        price: 270,
+        description: "Magia Portátil. Confecciono e consagro um Pantáculo específico para sua necessidade. Uma bateria energética que atua 24h por dia no seu bolso.",
+        link: "https://wa.me/p/33847656388158892/5521996102492",
       },
     ],
     invocacoes: {
