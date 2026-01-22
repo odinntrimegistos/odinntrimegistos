@@ -166,7 +166,7 @@ export function AstrologiaSection() {
                         )}
 
                         <Link
-                          href={`${whatsappLink}?text=${encodeURIComponent(
+                          href={service.link ?? `${whatsappLink}?text=${encodeURIComponent(
                             locale === "pt" ? `Olá, gostaria de agendar: ${service.name}` : `Hello, I'd like to book: ${service.name}`,
                           )}`}
                           target="_blank"
