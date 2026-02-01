@@ -12,14 +12,14 @@ export const siteConfigEn = {
     cta: "BOOK A SESSION",
   },
   origem: {
-    title: "Before speaking, I had to listen a lot.",
+    title: "Before I could speak, I had to listen.",
     highlight:
-      "My roots are in the Amazon. That land taught me humility and presence. I studied in silence for years, looking for logic in chaos and structure in the invisible. Today, I join study and real life to help you see clearly and act with coherence.\n\nMy journey in magic began solitary. Not in great orders or temples, but at home. It was 14 years of silent study, often wrestling with difficult texts, seeking logic in chaos, wanting to dismantle the gears of fate to see how they turned. I didn't want to appear; I just wanted to understand.\n\nBut no book teaches about people. The road teaches. As an artist, I traveled the world and learned to feel others. I saw that the anguish of someone on the other side of the planet was no different from mine. Art taught me tact, to perceive what hurts without anyone pointing it out.\n\nToday, I join these two halves. I bring the baggage of these years of study, but I apply it with the care of someone who knows they are dealing with real lives. I don't see you as an astral chart or a number. I see your story. And I use what I know to help you write the next pages with more clarity.",
+      "My roots are in the Amazon. That land taught me humility and presence. I studied in silence for years, seeking logic in chaos and structure in the invisible. Today, I merge study withl life to help you see clearly and act with coherence.\n\nMy journey in magic began solitary. Not in great orders or temples, but at home. It was 14 years of silent study, often wrestling with difficult texts, seeking logic in chaos, wanting to dismantle the gears of fate to see how they turned. I didn't want to appear; I just wanted to understand.\n\nBut no book teaches about people. The road teaches. As an artist, I traveled the world and learned to feel others. I saw that the anguish of someone on the other side of the planet was no different from mine. Art taught me tact, to perceive what hurts without anyone pointing it out.\n\nToday, I join these two halves. I bring the baggage of these years of study, but I apply it with the care of someone who knows they are dealing with real lives. I don't see you as an astral chart or a number. I see your story. And I use what I know to help you write the next pages with more clarity.",
     diferencialTitle: "DIFFERENTIAL",
     diferencialItems: [
-      "Not religious belief.",
-      "Engineering tools.",
-      "No labels, just the raw search for how things work.",
+      "Not dogma, but practice.",
+      "Engineering tools, not spirituality.",
+      "Raw inquiry into how things work.",
     ],
   },
   quemSouEu: {
@@ -28,35 +28,35 @@ export const siteConfigEn = {
       {
         heading: "HERMETICISM OF THE FOREST",
         paragraphs: [
-          "I was born in Belém do Pará, the Paris N'America: a city of decadent European architecture being slowly swallowed by the Amazon Rainforest.",
-          "I grew up in this cemetery of empires. I walked among rusted Greek god statues and century-old trees breaking through concrete.",
-          "There, I learned my first lesson in magic: Nature always defeats Form.",
-          "I saw things others ignored. Not spirits from fantasy books, but the subterranean currents that move people. The invisible layer.",
-          "In the Amazon, the veil between worlds is thin; and those born with eyes to see often wish to be blind.",
+          "I was born in Belém do Pará, the Paris of the Americas: a city of decadent European architecture slowly reclaimed by the Amazon Rainforest.",
+          "I grew up among the ruins of empires. I walked past rusted Greek god statues and ancient trees breaking through concrete.",
+          "There, I learned magic's first lesson: Nature always defeats Form.",
+          "I saw what others overlooked. Not spirits from fantasy books, but the subterranean currents moving people. The invisible layer.",
+          "In the Amazon, the veil between worlds is thin. Those born with eyes to see often wish they were blind.",
         ],
       },
       {
         heading: "ESCAPE AND THE ROAD",
         paragraphs: [
-          "Out of fear or self-preservation, I rejected what I felt. I tried to be normal. I fled into Art.",
-          "For 14 years, I lived as a wanderer. I traveled the world not as a tourist, but as someone looking for a missing piece.",
-          "I was an artist, I was a nomad, I was a stranger in strange lands.",
-          "Without knowing, I was living the archetype of Odin: the god who disguises himself as a traveler, sacrifices comfort and his own eye to drink from the well of Wisdom.",
+          "Driven by fear and self-preservation, I rejected what I felt. I tried to be normal. I escaped into Art.",
+          "For fourteen years, I lived as a wanderer, traveling the world not as a tourist, but as someone seeking a missing piece.",
+          "I was artist, nomad, and stranger in strange lands all at once.",
+          "Without knowing it, I was living the archetype of Odin: the god who disguises himself as a traveler, who sacrifices comfort and his own eye to drink from the well of Wisdom.",
         ],
       },
       {
         heading: "RETURN AND SYNTHESIS",
         paragraphs: [
-          "It was far from home that I understood my home.",
-          "Studying the ancient traditions of the North (Runes) and Egypt (Hermeticism), I realized something frightening: they described exactly the same forces I felt in the forest, but gave them structure and language.",
-          "The forest shaman (pajé) and the rune mage (vitki) are the same archetype. Both travel between worlds. Both use sacrifice to gain vision. Both understand that reality is moldable.",
-          "I didn't choose these names for vanity. I chose them for precision.",
+          "Distance from home is what helped me understand it.",
+          "Studying the ancient traditions of the North (Runes) and Egypt (Hermeticism), I realized something profound: they described the exact forces I felt in the forest, giving them structure and language.",
+          "The forest shaman (pajé) and the rune mage (vitki) are the same archetype. Both travel between worlds. Both use sacrifice to gain vision. Both understand that reality is malleable.",
+          "I didn't choose these names for ego. I chose them for precision.",
         ],
       },
     ],
     traditions: [
-      "ODINN represents the method: sacrifice, roughness, solitary search, the courage to look into the abyss.",
-      "TRIMEGISTOS represents the goal: synthesis. The Thrice Great. The one who unites Body (Earth/Forest), Mind (Hermeticism/Structure), and Soul (Will/North).",
+      "ODINN represents the method: sacrifice, directness, solitary inquiry, the courage to face the abyss.",
+      "TRIMEGISTOS represents the goal: synthesis. The Thrice Great. The one who unites Body (Earth/Forest), Mind (Hermeticism/Structure), and Soul (Will/Direction).",
     ],
     closing: "I bring the structure of stone to those lost in the jungle.",
   },
@@ -76,7 +76,7 @@ export const siteConfigEn = {
         title: "AWARENESS",
         subtitle: "STRATEGY",
         description:
-          "It's no use knowing the future if you keep acting the same in the present. Here, we connect the dots. We understand the origin of your blocks and design the best route out of the labyrinth.",
+          "Knowing the future means nothing if you keep acting the same in the present. Here, we connect the dots. We understand the origins of your blocks and design the path out of the labyrinth.",
       },
       {
         number: "3",
@@ -90,7 +90,7 @@ export const siteConfigEn = {
   terapias: {
     title: "ALCHEMY",
     subtitle: "Follow-up",
-    description: "Different from common therapy that focuses only on 'talking about the problem', Inner Alchemy focuses on Transmutation. We use dialogue, hermetic analysis, and mental exercises to take the 'lead' of your life (anxiety, fear, stagnation) and refine it until it becomes 'gold' (personal power and clarity). It's not about forgetting the past, it's about changing the state of matter.",
+    description: "Unlike common therapy, which focuses on 'talking about problems,' Inner Alchemy focuses on Transmutation. We use dialogue, hermetic analysis, and mental exercises to take the 'lead' of your life (anxiety, fear, stagnation) and refine it into 'gold' (personal power and clarity). It's not about forgetting the past—it's about transforming it at its core.",
     note: "Hermetic and philosophical approach. Does not replace clinical psychological or psychiatric treatment.",
     programs: [
       {
@@ -99,7 +99,7 @@ export const siteConfigEn = {
         tagline: "Single Session",
         duration: "1 session",
         price: 180,
-        description: "Confusion is a mixture of substances. We isolate fact from emotion and reality from paranoia. You leave with a filtered mind and clean vision for the next step.",
+        description: "Confusion is a mixture of substances. We separate fact from emotion and reality from fantasy. You leave with a clear mind and sharp vision for the next step.",
         ctaLabel: "BOOK",
         link: "https://wa.me/p/33416523524661108/5521996102492",
       },
@@ -110,7 +110,7 @@ export const siteConfigEn = {
         duration: "Bi-weekly",
         price: 333,
         priceLabel: "/ month",
-        description: "Stabilize progress. Bi-weekly meetings to ensure new habits and insights solidify, preventing regression to old patterns. Psyche maintenance.",
+        description: "Stabilize progress. Bi-weekly meetings to ensure new habits and insights take root, preventing regression to old patterns. Maintenance of consciousness.",
         ctaLabel: "START CYCLE",
         link: "https://wa.me/p/25600984942843799/5521996102492",
       },
@@ -121,7 +121,7 @@ export const siteConfigEn = {
         duration: "Weekly",
         price: 630,
         priceLabel: "/ month",
-        description: "High Intensity Protocol for crises or grief. We use 'high heat' weekly to accelerate the death of the old self. The only way to transmute lead into gold quickly.",
+        description: "High-Intensity Protocol for crises or deep transformation. We use 'high heat' weekly to accelerate the dissolution of the old self. The fastest way to transmute lead into gold.",
         ctaLabel: "START CYCLE",
         link: "https://wa.me/p/25872575419043346/5521996102492",
       },
@@ -139,7 +139,7 @@ export const siteConfigEn = {
     title: "TAROT",
     subtitle: "NARRATIVE",
     intro:
-      "Want to know the details? The 'who', 'how', and 'why'. Tarot tells the whole story. It doesn't just answer 'yes' or 'no'. It reveals the scene, the intentions of those involved, and what you are not seeing. Ideal for when the situation is confusing and you need to understand the full plot.",
+      "Want details? The 'who,' 'how,' and 'why'? Tarot tells the whole story. It doesn't simply answer 'yes' or 'no.' It reveals the scene, the intentions of those involved, and what you're missing. Ideal when the situation is confused and you need the full picture.",
     services: [
       {
         name: "SINGLE VECTOR",
@@ -150,25 +150,25 @@ export const siteConfigEn = {
       {
         name: "OPERATIVE TRIAD",
         price: 153,
-        description: "The logic of the problem. We map: Where you are (Fact), What stops you (Block), and The lever for change (Action). The minimum necessary to understand the mechanics of the situation.",
+        description: "The logic of the problem. We map: Where you stand (Fact), What blocks you (Obstacle), and How to move forward (Action). The essentials to understand the situation's mechanics.",
         link: "https://wa.me/p/25884175987879668/5521996102492",
       },
       {
         name: "ELEMENTAL PENTAGRAM",
         price: 243,
-        description: "Quick 360º view. I analyze the situation from 5 perspectives: Fire (Will), Water (Emotion), Air (Thought), Earth (Resource), and Spirit (Purpose). Discover the missing element.",
+        description: "360° view. I analyze the situation from five perspectives: Fire (Will), Water (Emotion), Air (Thought), Earth (Resource), and Spirit (Purpose). Discover what's missing.",
         link: "https://wa.me/p/33765606759704241/5521996102492",
       },
       {
         name: "ARCHETYPAL X-RAY",
         price: 216,
-        description: "Moment Diagnosis. We map which archetypes are in command of your unconscious now and how they shape your reality. Recalibrate your internal GPS.",
+        description: "Diagnosis of the moment. We identify which archetypes are commanding your unconscious and how they shape your reality. Recalibrate your inner compass.",
         link: "https://wa.me/5521996102492?text=Olá%20Odinn,%20vi%20seu%20trabalho%20e%20gostaria%20de%20agendar%20o%20RAIO-X%20ARQUETÍPICO.",
       },
       {
         name: "12 HOUSES MANDALA",
         price: 333,
-        description: "Systemic Architecture. We analyze the 12 areas of life simultaneously on the Zodiac Wheel. See how your career impacts your spiritual life and where the master key to your evolution lies.",
+        description: "Systemic Architecture. We analyze all 12 areas of life simultaneously on the Zodiac Wheel. Understand how career impacts spirituality and where your evolution's master key lies.",
         link: "https://wa.me/p/25687155450952279/5521996102492",
       },
     ],
@@ -191,35 +191,35 @@ export const siteConfigEn = {
         name: "TACTICAL VECTOR",
         price: 81,
         description:
-          "No time for beating around the bush. A direct reading to identify the force vector acting in your favor or against you now. The tactical answer for an urgent doubt.",
+          "No time for subtlety. A direct reading to identify the force acting for or against you now. The tactical answer to urgent questions.",
         link: "https://wa.me/p/24790527890623313/5521996102492",
       },
       {
         name: "TIMELINE",
         price: 207,
         description:
-          "Analysis of Past, Present, and Trend. If the probable future doesn't please, we design the strategy to alter the route before impact.",
+          "Analysis of Past, Present, and Trend. If the probable future doesn't appeal to you, we design the strategy to alter course before impact.",
         link: "https://wa.me/p/26011267368469521/5521996102492",
       },
       {
         name: "PATH ANALYSIS",
         price: 270,
         description:
-          "Analysis paralysis? We put your options on the table (A or B). I analyze the 'Price' and 'Prize' of each path. Choose knowing the real cost and where the gold is.",
+          "Paralyzed by choice? We put your options on the table (A or B). I analyze the 'Cost' and 'Reward' of each path. Choose knowing the real price and where the gold lies.",
         link: "https://wa.me/p/26004597412505174/5521996102492",
       },
       {
         name: "BLOCK DIAGNOSIS",
         price: 270,
         description:
-          "Is your life a broken record? The problem is an unconscious pattern. We dig into your shadow to identify the addiction or influence that sabotages your progress repeatedly.",
+          "Living on repeat? The problem is an unconscious pattern. We explore your shadow to identify the pattern or belief that sabotages your progress.",
         link: "https://wa.me/p/25529082140094227/5521996102492",
       },
       {
         name: "GENERAL MAPPING",
         price: 360,
         description:
-          "Battle Plan for 6 months. A systemic analysis of all areas (financial, affective, health). Understand how one area drains another and leave with a complete strategic map.",
+          "Six-month battle plan. A systemic analysis of all life areas (financial, relational, health). Understand how one area affects another and leave with a complete strategic map.",
         link: "https://wa.me/p/26243147955296699/5521996102492",
       },
     ],
@@ -231,43 +231,43 @@ export const siteConfigEn = {
       {
         name: "HERMETIC NATAL CHART",
         price: 450,
-        description: "The Instruction Manual. I analyze the exact position of the spheres at your birth to reveal the structure of your psyche, your innate resources, and the 'Fatum' (destiny) you carry.",
+        description: "Your instruction manual. I analyze the exact position of celestial bodies at your birth to reveal your psyche's structure, innate resources, and the destiny you carry.",
         link: "https://wa.me/p/25548554611471801/5521996102492",
       },
       {
         name: "THE KEY OF FORTUNE (Vocational)",
         price: 360,
-        description: "Vocation and Money. We use Hellenistic techniques (Lot of Fortune) to find the mathematical point where your skill meets the world's reward.",
+        description: "Vocation and Prosperity. We use Hellenistic techniques to find where your skill meets the world's demand for reward.",
         link: "https://wa.me/p/25972321942392791/5521996102492",
       },
       {
         name: "TEMPORAL ELECTION (Timing)",
         price: 270,
-        description: "War Strategy. Opening a company or signing a contract? I calculate the exact sky to ensure cosmic winds blow in favor of your initiative.",
+        description: "Strategic Timing. Launching a business or signing a contract? I calculate the optimal moment when cosmic forces align with your intention.",
         link: "https://wa.me/p/25475890022032542/5521996102492",
       },
       {
         name: "SUBTLE ANATOMY (Health)",
         price: 360,
-        description: "The Body reflects the Sky. Discover which planets rule your vitality and which transits indicate vulnerability. Prevention to align health with your chart.",
+        description: "Your body reflects the sky. Discover which planets govern your vitality and which transits signal vulnerability. Align health proactively with your chart.",
         link: "https://wa.me/p/26096521239977609/5521996102492",
       },
       {
         name: "HERMETIC SYNASTRY",
         price: 450,
-        description: "Chemistry or Explosion? We overlay two charts to see where gears mesh and where they grind. Understand the real dynamic of your relationship or partnership.",
+        description: "Chemistry or Collision? We overlay two charts to see where gears mesh and where they clash. Understand the true dynamic of your relationship or partnership.",
         link: "https://wa.me/p/26090083860628009/5521996102492",
       },
       {
         name: "THE THIRD FORCE (Composite)",
         price: 630,
-        description: "The Soul of the Relationship. We generate the map of the 'Us' entity. Discover the final purpose of this meeting and the destiny you will create together.",
+        description: "The soul of the union. We create the map of the relationship entity itself. Discover the purpose of this meeting and the shared destiny you're building.",
         link: "https://wa.me/p/25501945586156353/5521996102492",
       },
       {
         name: "THE GREAT LADDER (Initiatic)",
         price: 540,
-        description: "Beyond Destiny. For occultists. We map your journey through the 7 Planetary Spheres under the Hermetic view. The roadmap of your spiritual ascension.",
+        description: "Beyond Destiny. For occultists. We map your journey through the 7 Planetary Spheres in the Hermetic system. Your roadmap to spiritual ascension.",
         link: "https://wa.me/p/25256444730705031/5521996102492",
       },
     ],
@@ -285,47 +285,47 @@ export const siteConfigEn = {
       {
         name: "OPERATION OF JUPITER",
         price: 450,
-        description: "Prosperity Engineering. We evoke the force of Jupiter to expand your influence, attract resources, and unlock financial flow through the correct hierarchy.",
+        description: "Prosperity Engineering. We invoke Jupiter's force to expand your influence, attract resources, and unlock financial flow through proper channels.",
         link: "https://wa.me/p/25580643958253761/5521996102492",
       },
       {
         name: "OPERATION OF VENUS",
         price: 360,
-        description: "The Power of Aggregation. We calibrate your personal magnetism to make you a focal point of desire and admiration. Ideal for love, diplomacy, and negotiations.",
+        description: "The power of attraction. We calibrate your personal magnetism to make you magnetic. Ideal for love, diplomacy, and negotiations.",
         link: "https://wa.me/p/25523212320663440/5521996102492",
       },
       {
         name: "PROTOCOL OF MARS",
         price: 360,
-        description: "Spiritual Immunity. We invoke martial force to break demands, annul envy, and create an impenetrable security perimeter. Attack is the best defense.",
+        description: "Spiritual protection. We invoke Mars's force to deflect demands, neutralize envy, and create a powerful boundary. Strength repels attack.",
         link: "https://wa.me/p/33347923481523012/5521996102492",
       },
       {
         name: "CONSECRATED ARTIFACTS",
         price: 270,
-        description: "Portable Magic. I craft and consecrate a Pentacle specific to your need. An energetic battery that works 24/7 in your pocket.",
+        description: "Portable power. I craft and consecrate a Talisman specific to your need. An energetic tool that works day and night.",
         link: "https://wa.me/p/33847656388158892/5521996102492",
       },
     ],
     invocacoes: {
       title: "INVOCATIONS",
       description:
-        "Different from a simple ritual where we manipulate scattered energies, in Invocation we establish direct contact with ancient Intelligences. Here we don't work with 'luck' or 'hope'. We work with Pacts, Commands, and Spiritual Authority.",
+        "Unlike simple rituals where we work with scattered energies, Invocation establishes direct contact with ancient Intelligences. Here we don't rely on 'luck' or 'hope.' We work with Pacts, Commands, and Spiritual Authority.",
       detail:
-        "Since each case is unique, this work is not a shelf product. I design the exact strategy for your need, using two master keys: ARS GOETIA (Solomonic art) for rapid, material, and earthly results; and ENOCHIAN MAGIC (the language of angels) to restructure destiny and evolution.",
+        "Since each case is unique, this isn't a standard service. I design the exact strategy for your need using two master keys: ARS GOETIA (Solomonic magic) for rapid, material results; and ENOCHIAN MAGIC (the language of angels) to restructure destiny and evolution.",
       protocol:
-        "These rituals involve serious forces. They are not for the curious, nor for childish whims. To request an Invocation, it is mandatory to pass a Viability Analysis.",
+        "These rituals involve serious forces. They're not for the curious or frivolous. To request an Invocation, you must first undergo a Viability Analysis.",
       protocolDetails:
-        "In this preliminary consultation, I consult the Oracle to verify: 1) if your request is viable and safe; 2) which entity is correct for the case (Goetia or Enochian); 3) the value of the service (which varies according to complexity and materials).",
+        "In this preliminary consultation, I consult the Oracle to verify: 1) whether your request is viable and safe; 2) which entity is appropriate (Goetia or Enochian); 3) the service cost (which varies by complexity and materials).",
       analysisPrice: 150,
       ctaLabel: "REQUEST ANALYSIS",
-      closing: "(If the ritual is closed, the Preliminary Analysis fee is deducted from the final price).",
+      closing: "(If the ritual proceeds, the Analysis fee is deducted from the total cost).",
     },
   },
   mentorias: {
     title: "PATH OF HERMES",
     intro:
-      "I don't create followers. I create sovereigns. Reading books and PDFs doesn't make anyone a mage. What transforms lead into gold is Guided Practice.",
+      "I don't create followers. I create sovereigns. Reading books and PDFs doesn't make anyone a mage. What transforms lead into gold is directed practice.",
     programs: [
       {
         symbol: "I",
@@ -334,7 +334,7 @@ export const siteConfigEn = {
         subtitle: "For those who want to stop reading and start practicing",
         tagline: "You will learn to think like a Mage and build your practical base.",
         description:
-          "In this level, we build your foundation. We leave theory and master Hermetic Laws, mental control, energy protection, and cleansing. This is where you stop being a sponge and start shielding your field.",
+          "In this level, we build your foundation. We move from theory to practice, mastering Hermetic Laws, mental clarity, energy protection, and cleansing. This is where you stop absorbing and start establishing boundaries.",
         whatLearns: [
           "The 7 Laws applied",
           "Banishments",
@@ -355,7 +355,7 @@ export const siteConfigEn = {
         subtitle: "For those who want to master the tools",
         tagline: "Master the craft: advanced reading, talismans, sigils, and practical ritualism.",
         description:
-          "Here you learn the trade. It's not memorizing meanings: it's learning to see the narrative, consecrate talismans, and create your own rituals with technical understanding.",
+          "Here you learn the craft. It's not memorizing meanings—it's learning to perceive patterns, consecrate talismans, and create rituals with technical mastery.",
         whatLearns: [
           "Advanced Tarot or Rune Reading (focus of choice)",
           "Candle Magic",
@@ -376,7 +376,7 @@ export const siteConfigEn = {
         subtitle: "COMPLETE MAGE TRAINING",
         tagline: "Deep commitment to the Great Work: evocation, theurgy, and inner alchemy.",
         description:
-          "This is the level of Sovereignty. We enter High Magic: Evocation, Goetia, Enochian, and Inner Alchemy. Total support for 12 months and unrestricted access to the mentor.",
+          "This is mastery. We enter High Magic: Evocation, Goetia, Enochian, and Inner Alchemy. Twelve months of total support and unrestricted mentor access.",
         whatLearns: [
           "Evocation and Theurgy",
           "Goetia and Enochian Magic",
@@ -392,21 +392,21 @@ export const siteConfigEn = {
     ],
     prerequisito: {
       title: "Prerequisite",
-      text: "Before entering any mentorship, we do a free 15-minute interview to assess readiness and discipline. Magic requires discipline; I am demanding with my initiates.",
+      text: "Before beginning any mentorship, we conduct a free 15-minute consultation to assess readiness and commitment. Magic demands discipline; I expect the same from my students.",
     },
     ctaLabel: "APPLY FOR INITIATION",
   },
   circuloChave: {
     title: "KEY CIRCLE",
     subtitle: "LOYALTY SYSTEM",
-    intro: "Here, your constancy is sacred. I don't believe in disposable sessions. I believe in path building. Therefore, the more you walk with me, the more doors open for you.",
+    intro: "Here, your commitment is sacred. I don't believe in one-off sessions. I believe in building a path. The longer we walk together, the more doors open for you.",
     logica: {
-      title: "LOGIC IS SIMPLE:",
-      description: "For every R$ 100 invested in any service or mentorship, you receive 1 Key. These keys do not expire. They accumulate in your file and unlock new titles and lifetime benefits.",
+      title: "THE LOGIC IS SIMPLE:",
+      description: "For every R$ 100 invested in services or mentorship, you earn 1 Key. Keys never expire. They accumulate in your file and unlock new ranks and lifetime benefits.",
     },
     moeda: {
       name: "Keys",
-      rule: "Every R$ 100 invested earns 1 Key",
+      rule: "Every R$ 100 invested earns 1 Key.",
     },
     cargos: {
       title: "TITLES",
@@ -415,58 +415,58 @@ export const siteConfigEn = {
           symbol: "🜁",
           name: "Neophyte",
           range: "0 to 9 Keys",
-          description: "Entry into the path. First conscious contact.",
+          description: "Entry into the path. First conscious engagement.",
           benefits: [
-            "Participation in the system",
-            "Light schedule priority",
-            "Next steps guidance",
+            "System participation",
+            "Basic schedule priority",
+            "Guidance on next steps",
           ],
         },
         {
           symbol: "🜂",
           name: "Adeptus Minor",
           range: "10 to 29 Keys",
-          description: "Who already practices and returns.",
+          description: "Those who practice and return.",
           benefits: [
             "5% permanent discount",
-            "Free Tarot by Question upon reaching grade",
-            "Medium schedule priority",
-            "Early access to new services",
+            "One free quick Tarot reading annually",
+            "Mid-level schedule priority",
+            "Early access to new offerings",
           ],
         },
         {
           symbol: "🜃",
           name: "Adeptus Major",
           range: "30 to 59 Keys",
-          description: "Who sustains the work in time.",
+          description: "Those who sustain commitment over time.",
           benefits: [
             "10% permanent discount",
-            "1 free complete reading per year (Tarot or Runas)",
+            "One free comprehensive reading annually (Tarot or Runes)",
             "High schedule priority",
-            "Access to non-public combos and rituals",
+            "Access to exclusive offerings and rituals",
           ],
         },
         {
           symbol: "🜄",
           name: "Magister",
           range: "60+ Keys",
-          description: "Authority earned by constancy.",
+          description: "Authority earned through commitment.",
           benefits: [
             "15% permanent lifetime discount",
-            "Exclusive annual ritual",
-            "Direct access to schedule",
-            "Private invitations and closed experiences",
+            "One exclusive annual ritual",
+            "Direct calendar access",
+            "Private invitations to exclusive experiences",
           ],
         },
         {
           symbol: "🜍",
           name: "Magister Templi",
           range: "Direct access via Path of Hermes",
-          description: "Maximum Circle grade. This grade is not bought. It is conferred.",
+          description: "The highest Circle rank. This grade isn't purchased—it's earned.",
           benefits: [
             "All previous benefits",
-            "Custom works off-catalog",
-            "Absolute priority",
+            "Custom work created for you",
+            "Absolute scheduling priority",
             "Access to restricted experiences",
           ],
         },
@@ -482,19 +482,19 @@ export const siteConfigEn = {
     },
     comoComeca: {
       title: "HOW TO START?",
-      description: "No complex registration needed. Upon scheduling your first session, your file is automatically opened in my personal grimoire. At the end of each session, I inform you how many keys you earned and how many are left for the next grade.",
+      description: "No complex sign-up required. When you schedule your first session, your file automatically opens in my grimoire. After each session, I'll tell you how many Keys you've earned and how many remain for your next rank.",
     },
-    closing: "The symbol orients. Constancy rewards.",
+    closing: "The symbol guides. Commitment rewards.",
     regras: {
       title: "RULES",
-      items: ["Keys do not expire", "Grades do not regress", "Discounts do not stack", "Installments do not generate Keys"],
+      items: ["Keys never expire", "Ranks never decrease", "Discounts don't combine", "Installment payments don't earn Keys"],
     },
   },
   metodologia: {
     metadata: {
       title: "Path of Hermes | Odinn Trimegistos",
       description:
-        "Symbolic science applied to real life. Discover the Path of Hermes: Tarot, Astrology, Runes, Rituals, and Alchemy for conscious transformation.",
+        "Applied symbolic science for real transformation. Discover the Path of Hermes: Tarot, Astrology, Runes, Rituals, and Alchemy for conscious evolution.",
     },
     hero: {
       title: "PATH OF HERMES",
@@ -503,9 +503,9 @@ export const siteConfigEn = {
     caminho: {
       title: "The Path: The Alchemy of the Inner Christ",
       intro: [
-        "Often, we look to the sky looking for answers, forgetting the oldest truth taught by both Hermes and Christ: The Kingdom of God is within you.",
-        "This methodology is not about religion, but about Reintegration. It is an invitation to walk the sacred path back to your own essence, using the wisdom of the stars, Tarot symbols, and Christian mysticism as lanterns in the darkness.",
-        "The process is an inner pilgrimage in three sacred acts:",
+        "Often, we look to the sky for answers, forgetting the oldest truth taught by both Hermes and Christ: The Kingdom of God is within you.",
+        "This methodology isn't about religion, but about Reintegration. It's an invitation to walk the sacred path back to your essence, using the wisdom of the stars, Tarot symbols, and Christian mysticism as guides through darkness.",
+        "The process unfolds as an inner pilgrimage in three sacred acts:",
       ],
       acts: [
         {
@@ -513,9 +513,9 @@ export const siteConfigEn = {
           title: "1. The Desert and the Cross (Nigredo)",
           quote: "Unless a grain of wheat falls into the earth and dies, it remains alone.",
           process:
-            "We look at your Chart and Tarot with brutal honesty and compassion. We identify your false gods (fears and attachments).",
+            "We examine your Chart and Tarot with honesty and compassion, identifying your false gods—the fears and attachments that bind you.",
           vivencia:
-            "It is the moment of the inner Garden of Olives. We accept that for the true Self to be born, the old shell must break. It is not punishment; it is the preparation of fertile ground.",
+            "This is the inner Garden of Olives moment. For the true Self to be born, the old shell must break. It's not punishment—it's the preparation of fertile ground.",
         },
         {
           key: "albedo",
@@ -523,45 +523,45 @@ export const siteConfigEn = {
           quote:
             "The lamp of the body is the eye; if therefore thine eye be single, thy whole body shall be full of light.",
           process:
-            "Here Metanoia occurs: the transformation of the mind. We clean the gaze. Astrology stops showing restrictions and starts revealing talents; Theurgy acts as an active prayer of purification.",
+            "Here Metanoia occurs: the transformation of consciousness. We clarify your vision. Astrology shifts from showing limitations to revealing gifts; Theurgy acts as active purification.",
           vivencia:
-            "You stop reacting with pain and start acting with Love. It is the awakening of Christ consciousness: the ability to see the divine in oneself and in situations around.",
+            "You stop reacting from pain and start acting from love. This is the awakening of Christ consciousness: the ability to perceive the divine in yourself and circumstances.",
         },
         {
           key: "rubedo",
           title: "3. The Miracle and the New Wine (Rubedo)",
           quote: "I came that they may have life, and have it abundantly.",
           process:
-            "The incarnation of the Word. Your will aligns with the Greater Will. You are no longer a leaf in the wind, but a conscious channel of creation and healing.",
+            "The incarnation of the Word. Your will aligns with the Greater Will. You're no longer a leaf in the wind, but a conscious channel of creation and healing.",
           vivencia:
-            "It is living with feet on the ground and head in the sky. It is the fullness of being who you were designed to be, manifesting your work in the world with authority and grace.",
+            "Living with feet on the ground and awareness in the sky. It's the fullness of becoming who you were designed to be—manifesting your gifts with authority and grace.",
         },
       ],
       closing:
-        "This is a path of courage and love. I don't promise it will be easy, but I promise it will be true. It is the journey to discover that the Master you seek has always been waiting at the altar of your heart.",
+        "This is a path of courage and love. I don't promise ease, but I promise authenticity. It's the journey to discover that the Master you seek has always been waiting at your heart's altar.",
       cta: { label: "Start Pilgrimage" },
     },
     principioFundamental: {
       intro: [
-        [{ text: "My work is born from the meeting of tradition, practical experience, and deep observation of the human being." }],
+        [{ text: "My work emerges from tradition, practical experience, and deep observation of human nature." }],
         [
-          { text: "I don't follow dogmas, I don't repeat ready-made formulas, and I don't use spirituality as an escape from reality. Everything I apply in sessions has " },
-          { text: "function, coherence, and practical impact", className: "text-gold" },
+          { text: "I don't follow dogma, I don't repeat formulas, and I don't use spirituality as escape. Everything I apply has " },
+          { text: "function, coherence, and real impact", className: "text-gold" },
           { text: "." },
         ],
         [
-          { text: "I call this path " },
+          { text: "I call this the " },
           { text: "Path of Hermes", className: "text-bone font-medium" },
-          { text: " because it is based on the integration between " },
+          { text: " because it integrates " },
           { text: "consciousness, purpose, and action", className: "text-gold" },
           { text: "." },
         ],
       ],
       label: "FUNDAMENTAL PRINCIPLE",
       statement: [
-        { text: "True transformation happens when " },
+        { text: "Real transformation happens when " },
         { text: "body, mind, and soul", className: "text-gold" },
-        { text: " walk together." },
+        { text: " work as one." },
       ],
       cards: [
         {
@@ -593,25 +593,25 @@ export const siteConfigEn = {
         },
       ],
       closing:
-        "My methodology organizes these three dimensions progressively, respecting each person's time, history, and limits.",
+        "My methodology integrates these three dimensions progressively, honoring each person's pace, history, and boundaries.",
     },
     comoFunciona: {
       title: "HOW IT WORKS IN PRACTICE",
       description:
-        "Each session, whether punctual or mentorship, is conducted from three essential movements:",
+        "Every session, whether single or mentorship, flows through three essential movements:",
       movimentos: [
         { num: "1", title: "Reading", description: "Clear understanding of the moment" },
         { num: "2", title: "Awareness", description: "Understanding patterns and cycles" },
         { num: "3", title: "Integration", description: "Real application in daily life" },
       ],
       closing: [
-        { text: "Nothing is done to impress.", className: "text-sand/60 italic" },
-        { text: "Everything is done to work.", className: "text-gold font-medium" },
+        { text: "Nothing is done for show.", className: "text-sand/60 italic" },
+        { text: "Everything is done to create results.", className: "text-gold font-medium" },
       ],
     },
     praticas: {
       title: "PRACTICES USED IN SESSIONS",
-      description: "All practices, knowledge, and tools I employ, always in an integrated and ethical way.",
+      description: "All practices, knowledge, and tools I employ are always integrated and applied ethically.",
       items: [
         {
           iconKey: "layers",
@@ -624,7 +624,7 @@ export const siteConfigEn = {
             "Clarity on choices and possibilities",
             "Guidance in moments of decision",
           ],
-          nota: "The cards work as a mirror. They reveal what is already active in the psyche and life.",
+          nota: "The cards function as a mirror, revealing what's already active in your psyche and life.",
         },
         {
           iconKey: "moon",
@@ -633,7 +633,7 @@ export const siteConfigEn = {
           description: "Astrology contextualizes the moment and cycles that ask for movement or patience.",
           aplicacoes: ["Natal chart", "Current transits", "Cycles of maturation and closure"],
           objetivos: ["What phase is it", "What asks for movement", "What asks for patience", "What asks for closure"],
-          nota: "Astrology returns time and maturity to decisions.",
+          nota: "Astrology restores timing and context to decisions.",
         },
         {
           iconKey: "compass",
@@ -641,7 +641,7 @@ export const siteConfigEn = {
           subtitle: "Practical direction",
           description: "Runes show choices, consequences, and active forces objectively.",
           aplicacoes: ["Choices", "Consequences", "Active forces in the moment", "Challenges that can no longer be avoided"],
-          nota: "Runes do not soften. They show what needs to be faced with honesty.",
+          nota: "Runes don't soften truth. They show what must be faced directly.",
         },
         {
           iconKey: "flame",
@@ -649,7 +649,7 @@ export const siteConfigEn = {
           subtitle: "Concrete step",
           description: "Rituals mark decisions and closures. They serve to sustain change in daily life.",
           aplicacoes: ["Mark closures", "Sustain decisions", "Open new cycles", "Integrate internal changes"],
-          nota: "The ritual organizes intention and helps sustain the choice in the body and routine.",
+          nota: "The ritual anchors intention and sustains change in your body and daily life.",
         },
         {
           iconKey: "flask",
@@ -657,7 +657,7 @@ export const siteConfigEn = {
           subtitle: "Internal transformation",
           description: "Base of the method that guides change processes over time.",
           aplicacoes: ["Understand internal processes", "Dissolve old patterns", "Integrate learnings", "Transform consciousness into posture"],
-          nota: "The alchemical cycle (Nigredo, Albedo, Citrinitas, and Rubedo) guides both punctual sessions and the complete Path of Hermes process.",
+          nota: "The alchemical cycle (Nigredo, Albedo, Citrinitas, and Rubedo) guides both single sessions and the complete Path of Hermes.",
         },
         {
           iconKey: "wind",
@@ -665,7 +665,7 @@ export const siteConfigEn = {
           subtitle: "Alchemical Vessel",
           description: "Without a present body, there is no real transformation.",
           aplicacoes: ["Breathing (functional pranayama)", "Body presence", "Perception of tensions and vital rhythm"],
-          nota: "The body is treated as the alchemical vessel of the spiritual process.",
+          nota: "The body is the alchemical vessel through which transformation occurs.",
         },
         {
           iconKey: "brain",
@@ -673,7 +673,7 @@ export const siteConfigEn = {
           subtitle: "Applied Consciousness",
           description: "Throughout sessions, I work on identifying unconscious patterns.",
           aplicacoes: ["Recurrent emotional patterns", "Defense mechanisms", "Unconscious repetitions", "Conflicts between desire, fear, and action"],
-          nota: "This is not clinical therapy, but applied consciousness.",
+          nota: "This differs from clinical therapy—it's applied consciousness.",
         },
       ],
     },
@@ -686,8 +686,8 @@ export const siteConfigEn = {
         { sigilKey: "soul", title: "Soul", description: "Purpose, meaning, and coherence between who one is and how one lives.", color: "from-deepred/10 to-graphite/50" },
       ],
       closing: [
-        { text: "These pillars are not worked separately, but ", className: "text-sand/60 italic" },
-        { text: "integrated over time", className: "text-gold/80" },
+        { text: "These pillars aren't worked separately—they're ", className: "text-sand/60 italic" },
+        { text: "integrated progressively", className: "text-gold/80" },
         { text: ".", className: "text-sand/60 italic" },
       ],
     },
@@ -705,7 +705,7 @@ export const siteConfigEn = {
         "Comparative study of traditions",
         "Direct experience in sessions and mentorships",
       ],
-      closing: ["I do not reproduce dogmas.", "I work with what has been lived, tested, and integrated."],
+      closing: ["I don't reproduce dogma.", "I work with what's been lived, tested, and integrated."],
     },
     etica: {
       title: "ETHICS AND RESPONSIBILITY",
@@ -715,7 +715,7 @@ export const siteConfigEn = {
         { iconKey: "scale", text: "I do not encourage spiritual dependency" },
         { iconKey: "compass", text: "The symbol orients, but the choice is always the consultant's" },
       ],
-      closing: "Spirituality without responsibility does not serve growth.",
+      closing: "Spirituality without responsibility doesn't serve growth.",
     },
     essencia: {
       badge: "IN ESSENCE",
@@ -728,7 +728,7 @@ export const siteConfigEn = {
       closing: [
         { text: "No fantasy." },
         { text: "No escape." },
-        { text: "With presence.", className: "text-gold" },
+        { text: "Only presence.", className: "text-gold" },
       ],
       cta: { label: "View Services and Mentorships" },
     },
@@ -737,12 +737,12 @@ export const siteConfigEn = {
     title: "ETHICS AND RESPONSIBILITY",
     items: [
       "Confidential sessions",
-      "Do not replace medical or psychological follow-up",
-      "The symbol orients, the choice is always yours",
+      "Don't replace medical or psychological follow-up",
+      "The symbol guides, the choice is always yours",
     ],
   },
   encerramento: {
-    text: "You don't need to believe in anything.",
+    text: "You don't need to believe anything.",
     subtext: "You just need to be willing to see clearly.",
   },
 };
