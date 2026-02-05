@@ -78,7 +78,7 @@ export function MentoriasSection() {
                     <div className={`mt-6 space-y-4 ${program.highlight ? "md:mt-0 md:min-w-[280px]" : ""}`}>
                       <div className={`px-6 py-4 bg-graphite/40 rounded-lg text-center ${program.highlight ? "border border-gold/20" : ""}`}>
                         <p className={`font-display text-gold whitespace-nowrap ${program.highlight ? "text-4xl" : "text-3xl"}`}>
-                          {formatPrice(program.price)}
+                          {formatPrice(program.price, locale)}
                           {program.priceLabel && <span className="text-lg text-sand/60">{program.priceLabel}</span>}
                         </p>
                         {program.priceAlt && (

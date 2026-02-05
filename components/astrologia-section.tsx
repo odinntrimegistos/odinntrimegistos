@@ -143,7 +143,7 @@ export function AstrologiaSection() {
                               {service.duration}
                             </span>
                             <span className="font-display text-gold font-semibold text-xl">
-                              {formatPrice(service.price)}
+                              {formatPrice(service.price, locale)}
                             </span>
                           </div>
                         </div>

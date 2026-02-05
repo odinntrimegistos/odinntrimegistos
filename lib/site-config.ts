@@ -58,15 +58,31 @@ export function getSiteConfig(locale: Locale) {
     const handle = val.replace(/^@/, "").trim()
     return handle ? `https://instagram.com/${handle}` : undefined
   }
+  const normalizeTikTok = (val?: string) => {
+    if (!val) return undefined
+    if (/^https?:\/\//i.test(val)) return val
+    const handle = val.replace(/^@/, "").trim()
+    return handle ? `https://tiktok.com/@${handle}` : undefined
+  }
+  const normalizeYouTube = (val?: string) => {
+    if (!val) return undefined
+    if (/^https?:\/\//i.test(val)) return val
+    const handle = val.replace(/^@/, "").trim()
+    return handle ? `https://www.youtube.com/@${handle}` : undefined
+  }
   const envLinks = {
     whatsapp: normalizeWhatsApp(process.env.NEXT_PUBLIC_WHATSAPP),
     instagram: normalizeInstagram(process.env.NEXT_PUBLIC_INSTAGRAM),
+    tiktok: normalizeTikTok(process.env.NEXT_PUBLIC_TIKTOK),
+    youtube: normalizeYouTube(process.env.NEXT_PUBLIC_YOUTUBE),
     email: process.env.NEXT_PUBLIC_EMAIL,
   }
   const links = {
     ...(merged as any).links,
     whatsapp: envLinks.whatsapp || (merged as any).links?.whatsapp,
     instagram: envLinks.instagram || (merged as any).links?.instagram,
+    tiktok: envLinks.tiktok || (merged as any).links?.tiktok,
+    youtube: envLinks.youtube || (merged as any).links?.youtube,
     email: envLinks.email || (merged as any).links?.email,
   }
 

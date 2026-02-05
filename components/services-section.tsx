@@ -140,7 +140,7 @@ export function ServicesSection() {
                                 {service.duration}
                               </span>
                               <span className="font-display text-gold font-semibold text-lg group-hover:text-gold-bright transition-colors">
-                                {formatPrice(service.price)}
+                                {formatPrice(service.price, locale)}
                               </span>
                             </div>
                           </CardHeader>

@@ -147,7 +147,7 @@ export function OraculosSection() {
                   >
                     <p className="text-bone font-display mb-1">{item.name}</p>
                     <p className="text-sand/60 text-xs mb-2">{item.detail}</p>
-                    <p className="text-gold font-display text-lg">{formatPrice(item.price)}</p>
+                    <p className="text-gold font-display text-lg">{formatPrice(item.price, locale)}</p>
                   </motion.div>
                 ))}
               </div>
@@ -171,7 +171,7 @@ export function OraculosSection() {
                             <Clock className="w-3 h-3" />
                             {service.duration}
                           </span>
-                          <span className="font-display text-gold font-semibold text-xl">{formatPrice(service.price)}</span>
+                          <span className="font-display text-gold font-semibold text-xl">{formatPrice(service.price, locale)}</span>
                         </div>
                       </CardHeader>
                       <CardContent className="space-y-4">
@@ -255,7 +255,7 @@ export function OraculosSection() {
                             <Clock className="w-3 h-3" />
                             {service.duration}
                           </span>
-                          <span className="font-display text-gold font-semibold text-xl">{formatPrice(service.price)}</span>
+                          <span className="font-display text-gold font-semibold text-xl">{formatPrice(service.price, locale)}</span>
                         </div>
                       </CardHeader>
                       <CardContent className="space-y-4">

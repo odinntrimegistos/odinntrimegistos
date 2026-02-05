@@ -54,6 +54,24 @@ export function Footer() {
             </Link>
             <span className="text-sand/40">•</span>
             <Link
+              href={siteConfig.links.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              TikTok
+            </Link>
+            <span className="text-sand/40">•</span>
+            <Link
+              href={siteConfig.links.youtube}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-gold transition-colors"
+            >
+              YouTube
+            </Link>
+            <span className="text-sand/40">•</span>
+            <Link
               href={`mailto:${siteConfig.links.email}`}
               className="hover:text-gold transition-colors"
             >

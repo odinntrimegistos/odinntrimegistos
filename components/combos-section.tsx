@@ -74,7 +74,7 @@ export function CombosSection() {
                           <h4 className="font-display text-lg text-bone">{combo.name}</h4>
                           <p className="text-sand/60 text-xs">{combo.services}</p>
                         </div>
-                        <span className="font-display text-gold text-xl">{formatPrice(combo.price)}</span>
+                        <span className="font-display text-gold text-xl">{formatPrice(combo.price, locale)}</span>
                       </div>
                       <div className="space-y-2 text-sm">
                         <p className="text-sand/70">
@@ -123,7 +123,7 @@ export function CombosSection() {
                           <h4 className="font-display text-lg text-bone">{combo.name}</h4>
                           <p className="text-sand/60 text-xs">{combo.services}</p>
                         </div>
-                        <span className="font-display text-gold text-xl">{formatPrice(combo.price)}</span>
+                        <span className="font-display text-gold text-xl">{formatPrice(combo.price, locale)}</span>
                       </div>
                       <div className="space-y-2 text-sm">
                         <p className="text-sand/70">

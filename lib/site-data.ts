@@ -7,6 +7,8 @@ export const siteConfig = {
   links: {
     whatsapp: "https://wa.me/5521996102492",
     instagram: "https://instagram.com/odinntrimegistos",
+    tiktok: "https://tiktok.com/@odinntrimegistos",
+    youtube: "https://www.youtube.com/@odinntrimegistos",
     email: "contato@odinntrimegistos.com",
   },
 

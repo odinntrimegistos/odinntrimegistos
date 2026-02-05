@@ -124,7 +124,7 @@ export function RituaisSection() {
                               {service.duration}
                             </span>
                           )}
-                          <span className="font-display text-gold font-semibold text-xl">{formatPrice(service.price)}</span>
+                          <span className="font-display text-gold font-semibold text-xl">{formatPrice(service.price, locale)}</span>
                         </div>
                       </CardHeader>
                       <CardContent className="space-y-4">
@@ -209,7 +209,7 @@ export function RituaisSection() {
                   </div>
                 )}
 
-                <p className="text-bone font-medium">{locale === 'pt' ? 'Valor da Análise Prévia:' : 'Fee for the Viability Analysis:'} <span className="text-gold font-display">{formatPrice(rituais.invocacoes.analysisPrice)}</span></p>
+                <p className="text-bone font-medium">{locale === 'pt' ? 'Valor da Análise Prévia:' : 'Fee for the Viability Analysis:'} <span className="text-gold font-display">{formatPrice(rituais.invocacoes.analysisPrice, locale)}</span></p>
                 <p className="text-sand/60 text-sm italic pt-2">{rituais.invocacoes.closing}</p>
               </div>
 
